@@ -1,0 +1,49 @@
+# -*- mode: gitignore; -*-
+
+### Android ###
+# Built application files
+*.apk
+*.ap_
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Gradle files
+.gradle/
+build/
+/*/build/
+
+
+### Emacs ###
+*.elc
+*~
+.\#*
+\#*\#
+
+
+### Node ####
+node_modules/
+npm-debug.log
+
+
+### OSX ###
+.DS_Store
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+*.egg-info/
+
+# Sphinx documentation
+docs/_build/
+
+
+### Vagrant ###
+.vagrant/
