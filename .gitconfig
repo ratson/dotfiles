@@ -1,2 +1,4 @@
 [core]
 	excludesfile = ~/.gitignore_global
+[grep]
+	linenumber = true
