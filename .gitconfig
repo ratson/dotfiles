@@ -2,5 +2,7 @@
 	excludesfile = ~/.gitignore_global
 [grep]
 	linenumber = true
+[push]
+	default = simple
 [rerere]
 	enabled = true
