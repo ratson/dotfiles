@@ -1,3 +1,20 @@
+[alias]
+	# branch
+	br = branch
+	# checkout
+	co = checkout
+	# commit
+	ca = commit --amend
+	ci = commit
+	# diff
+	d = diff
+	dc = diff --cached
+	ds = diff --staged
+	dw = diff --color-words
+	# diff
+	p = pull --rebase
+	# status
+	st = status --branch --short
 [core]
 	excludesfile = ~/.gitignore_global
 [include]
