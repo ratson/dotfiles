@@ -4,6 +4,8 @@
 	# checkout
 	co = checkout
 	# commit
+	amend = commit --amend --no-edit
+	amendx = commit --amend --no-edit --reset-author
 	ca = commit --amend
 	ci = commit
 	# diff
