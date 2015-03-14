@@ -17,6 +17,8 @@
 	p = pull --rebase
 	# status
 	st = status --branch --short
+[commit]
+	template = ~/.gitmessage
 [core]
 	excludesfile = ~/.gitignore_global
 [include]
