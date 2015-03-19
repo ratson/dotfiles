@@ -8,18 +8,29 @@
 	amendx = commit --amend --no-edit --reset-author
 	ca = commit --amend
 	ci = commit
+	# daemon
+	serve = daemon --base-path=. --export-all --reuseaddr --verbose
 	# diff
 	d = diff
 	dc = diff --cached
 	ds = diff --staged
 	dw = diff --color-words
-	# diff
+	# grep
+	todo = grep --break --heading -e ' FIXME *' -e ' TODO *'
+	# merge
+	m = merge
+	mn = merge --no-ff
+	# pull
 	p = pull --rebase
+	# shortlog
+	contrib = shortlog --no-merges --numbered --summary
 	# status
 	st = status --branch --short
 	# submodule
 	sub = submodule
 	suba = submodule add
+	subf = submodule foreach
+	subst = submodule status
 	subup = submodule update --init --recursive
 [commit]
 	template = ~/.gitmessage
