@@ -17,6 +17,10 @@
 	dw = diff --color-words
 	# grep
 	todo = grep --break --heading -e ' FIXME *' -e ' TODO *'
+	# log
+	log-graph = log --all --decorate --graph
+	log-refs = log --all --decorate --graph --no-merges --oneline --simplify-by-decoration
+	log-tree = log --abbrev-commit --all --decorate --graph --pretty=oneline
 	# merge
 	m = merge
 	mn = merge --no-ff
