@@ -15,8 +15,9 @@ Vagrant.configure(2) do |config|
     config.vbguest.auto_update = false
   end
 
-  [File.join(File.dirname(__FILE__), VAGRANTFILE_LOCAL),
-   VAGRANTFILE_LOCAL].each do |config_file|
+  [File.dirname(__FILE__),
+   Vagrant::Environment.new.root_path].each do |search_path|
+    config_file = File.join(search_path, VAGRANTFILE_LOCAL)
     if File.exist?(config_file)
       instance_eval File.read(config_file), config_file
     end
