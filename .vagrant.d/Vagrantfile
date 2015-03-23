@@ -1,12 +1,24 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+VAGRANTFILE_LOCAL = "Vagrantfile.local"
+
 Vagrant.configure(2) do |config|
+  config.vm.box_check_update = false
+
   if Vagrant.has_plugin?("vagrant-cachier")
     config.cache.auto_detect = true
+    config.cache.scope = :box
   end
 
   if Vagrant.has_plugin?("vagrant-vbguest")
     config.vbguest.auto_update = false
+  end
+
+  [File.join(File.dirname(__FILE__), VAGRANTFILE_LOCAL),
+   VAGRANTFILE_LOCAL].each do |config_file|
+    if File.exist?(config_file)
+      instance_eval File.read(config_file), config_file
+    end
   end
 end
