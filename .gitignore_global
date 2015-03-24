@@ -47,3 +47,4 @@ docs/_build/
 
 ### Vagrant ###
 .vagrant/
+Vagrantfile.local
