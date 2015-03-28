@@ -102,6 +102,7 @@ before layers configuration."
    ;; Not used for now.
    dotspacemacs-default-package-repository nil)
   ;; User initialization goes here
+  (setq company-mode-use-tab-instead-of-enter t)
   )
 
 (defun dotspacemacs/config ()
