@@ -110,6 +110,7 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
   (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.sls\\'" . yaml-mode))
   (add-to-list 'auto-mode-alist '("\\.zpreztorc\\'" . sh-mode))
 )
 
