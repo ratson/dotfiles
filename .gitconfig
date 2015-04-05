@@ -22,7 +22,8 @@
 	log-refs = log --all --decorate --graph --no-merges --oneline --simplify-by-decoration
 	log-tree = log --abbrev-commit --all --decorate --graph --pretty=oneline
 	# merge
-	m = merge
+	m = merge --ff-only
+	mm = merge
 	mn = merge --no-ff
 	# pull
 	p = pull --rebase
