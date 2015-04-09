@@ -1,0 +1,11 @@
+"*":
+  core:
+    disabledPackages: [
+      "exception-reporting"
+      "feedback"
+      "metrics"
+      "welcome"
+    ]
+  editor:
+    showInvisibles: true
+    showIndentGuide: true
