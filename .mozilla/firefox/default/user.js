@@ -23,3 +23,17 @@ user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("toolkit.telemetry.enabled", false);
 user_pref("toolkit.telemetry.prompted", 2);
 user_pref("toolkit.telemetry.rejected", true);
+
+// Don't tell Google about every site I visit
+user_pref("browser.safebrowsing.enabled", false);
+user_pref("browser.safebrowsing.malware.enabled", false);
+
+// Don't send my query until I hit Enter
+user_pref("browser.search.suggest.enabled", false);
+
+// Don't let sites auto-refresh
+user_pref("accessibility.blockautorefresh", true);
+
+// Never send the Referer header
+user_pref("network.http.sendRefererHeader", 0);
+user_pref("network.http.sendSecureXSiteReferrer", false);
