@@ -3,6 +3,9 @@
 	br = branch
 	# checkout
 	co = checkout
+	# clone
+	cl = clone
+	clr = clone --recursive
 	# commit
 	amend = commit --amend --no-edit
 	amendx = commit --amend --no-edit --reset-author
