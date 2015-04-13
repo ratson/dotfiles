@@ -1,0 +1,74 @@
+after-scripts:
+- brew linkapps
+casks:
+- android-file-transfer
+- atom
+- caffeine
+- chromium
+- firefox
+- font-inconsolata
+- font-roboto
+- font-roboto-slab
+- font-source-code-pro
+- google-chrome
+- google-chrome-canary
+- imageoptim
+- inkscape
+- iterm2-nightly
+- opera
+- pgadmin3
+- quicksilver
+- sourcetree
+- spectacle
+- the-unarchiver
+- vagrant
+- virtualbox
+- vlc
+- xquartz
+formulas:
+- aspell --with-lang-en
+- boot2docker
+- brew-cask
+- cloc
+- coreutils
+- dnsmasq
+- dos2unix
+- emacs --with-cocoa --with-glib --with-gnutls --with-librsvg --with-mailutils --HEAD
+- fasd
+- ffind
+- findutils
+- fortune
+- git --with-blk-sha1 --with-brewed-curl --with-brewed-openssl --with-brewed-svn --with-gettext --with-pcre --with-persistent-https
+- go
+- jsonpp
+- mercurial
+- nmap
+- node
+- nvm
+- p7zip
+- pass
+- pypy
+- python
+- python3
+- ruby
+- subversion
+- task --with-gnutls
+- terminal-notifier
+- the_silver_searcher
+- tree
+- tmux
+- trash
+- vim
+- w3m
+- youtube-dl
+- zsh --disable-etcdir
+taps:
+- caskroom/cask
+- caskroom/fonts
+- caskroom/versions
+- dart-lang/dart
+- homebrew/binary
+- homebrew/dupes
+- homebrew/php
+- homebrew/versions
+- homebrew/x11
