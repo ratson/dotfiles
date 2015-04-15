@@ -52,3 +52,5 @@
 	default = simple
 [rerere]
 	enabled = true
+[tig]
+	mouse = yes
