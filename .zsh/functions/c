@@ -1,0 +1,4 @@
+# -*- mode: shell-script -*-
+# vi: set ft=zsh :
+
+tr -d "\n" | pbcopy

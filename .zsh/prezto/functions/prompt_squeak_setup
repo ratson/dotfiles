@@ -1,0 +1,20 @@
+# -*- mode: shell-script -*-
+# vi: set ft=zsh :
+
+function prompt_squeak_precmd {
+  if (( $+functions[node-info] )); then
+    node-info
+  fi
+}
+
+function prompt_squeak_setup {
+  add-zsh-hook precmd prompt_squeak_precmd
+
+  zstyle ':prezto:module:node:info:version' format 'node:%v'
+
+  prompt_steeef_setup "$@"
+
+  RPROMPT='$node_info[version]'
+}
+
+prompt_squeak_setup "$@"
