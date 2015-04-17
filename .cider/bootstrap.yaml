@@ -29,6 +29,7 @@ formulas:
 - aspell --with-lang-en
 - boot2docker
 - brew-cask
+- cheat
 - cloc
 - coreutils
 - dnsmasq
@@ -51,6 +52,7 @@ formulas:
 - python
 - python3
 - ruby
+- shellcheck
 - subversion
 - task --with-gnutls
 - terminal-notifier
