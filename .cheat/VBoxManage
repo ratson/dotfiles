@@ -1,0 +1,2 @@
+# Shutdown virtual machine gracefully
+VBoxManage controlvm <vm name> acpipowerbutton
