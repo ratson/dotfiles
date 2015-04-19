@@ -1,0 +1,5 @@
+# Open PostgreSQL interactive terminal
+sudo -u postgres psql <db>
+
+# Display size of tables
+\d+
