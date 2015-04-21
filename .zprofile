@@ -85,3 +85,6 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+# Make Zsh the default shell
+[[ $SHELL =~ "zsh" ]] || export SHELL=`builtin which zsh`
