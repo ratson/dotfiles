@@ -1,0 +1,2 @@
+# Allow port 22 connect from ip x.x.x.x
+ufw allow from x.x.x.x/32 to any port 22 proto tcp
