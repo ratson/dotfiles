@@ -112,6 +112,7 @@ layers configuration."
   (setq-default sh-basic-offset 2)
   (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.sls\\'" . yaml-mode))
+  (add-to-list 'auto-mode-alist '("\\.taskrc\\'" . conf-mode))
   (add-to-list 'auto-mode-alist '("\\.zpreztorc\\'" . sh-mode))
 )
 
