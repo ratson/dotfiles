@@ -1,0 +1,9 @@
+alias.bd=burndown.weekly
+alias.bdd=burndown.daily
+alias.bdm=burndown.monthly
+
+reserved.lines=2
+search.case.sensitive=no
+
+report.next.columns=id,start.age,entry.age,depends,priority,project,tags,description,recur,scheduled.countdown,due.age,due.remaining,until.age,urgency,due
+report.next.labels=ID,Active,Age,Deps,P,Project,Tag,Description,Recur,S,Due,Due Next,Until,Urg,Due Date
