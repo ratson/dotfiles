@@ -1,6 +1,7 @@
 (defvar personal-packages
   '(
     clocker
+    w3m
     ))
 
 (defadvice spacemacs/mode-line-prepare-left (around compile)
@@ -10,5 +11,8 @@
   (use-package clocker
     :config
     (progn
-      (ad-activate 'spacemacs/mode-line-prepare-left)
-      (clocker-mode 1))))
+      (ad-activate 'spacemacs/mode-line-prepare-left))))
+
+(defun personal/init-w3m ()
+  (use-package w3m
+    :defer t))
