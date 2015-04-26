@@ -53,6 +53,7 @@ formulas:
 - pypy
 - python
 - python3
+- ranger
 - ruby
 - shellcheck
 - subversion
