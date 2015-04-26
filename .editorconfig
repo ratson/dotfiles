@@ -1,0 +1,16 @@
+root = true
+
+[*]
+insert_final_newline = true
+
+[*.{html,css,js,less,jsx}]
+indent_size = 2
+indent_style = space
+
+[*.{sh,bash,zsh}]
+indent_size = 2
+indent_style = tab
+
+[{gitconfig,hgrc}]
+indent_size = 4
+indent_style = tab
