@@ -7,6 +7,7 @@ coffeelint
 csslint
 hoxy
 jshint
+nesh
 npm
 npm-check-updates
 )
