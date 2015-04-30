@@ -5,6 +5,8 @@ bower
 coffee-script
 coffeelint
 csslint
+eslint
+eslint-plugin-react
 hoxy
 jshint
 nesh

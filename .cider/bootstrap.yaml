@@ -1,6 +1,7 @@
 after-scripts:
 - brew linkapps --local
 - ./install-node-packages.sh
+- ./cleanup.sh
 casks:
 - android-file-transfer
 - atom
