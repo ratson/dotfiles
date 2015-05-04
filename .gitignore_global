@@ -1,5 +1,7 @@
 # -*- mode: gitignore; -*-
 
+*.pid
+
 ### Android ###
 # Built application files
 *.apk
