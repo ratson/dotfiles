@@ -1,6 +1,9 @@
 alias.bd=burndown.weekly
 alias.bdd=burndown.daily
 alias.bdm=burndown.monthly
+alias.c=calendar
+alias.g=ghistory
+alias.h=history
 
 reserved.lines=2
 search.case.sensitive=no
