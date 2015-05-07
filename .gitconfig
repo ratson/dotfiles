@@ -40,6 +40,12 @@
 	subf = submodule foreach
 	subst = submodule status
 	subup = submodule update --init --recursive
+	# update-index
+	assume = update-index --assume-unchanged
+	unassume = update-index --no-assume-unchanged
+	# snippets
+	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+	unassume-all = "!git assumed | xargs git unassume"
 [commit]
 	template = ~/.gitmessage
 [core]
