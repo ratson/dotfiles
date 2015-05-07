@@ -1,5 +1,6 @@
 # Emacs
-alias em='emacsclient -n -a "emacs"'
+alias ec='emacsclient -nc -a "emacs"'
+alias em='emacsclient -t -a "emacs"'
 alias et='emacsclient -t'
 
 # SSH
