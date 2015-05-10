@@ -16,7 +16,7 @@ casks:
 - google-chrome-canary
 - imageoptim
 - inkscape
-- iterm2-nightly
+- iterm2-beta
 - opera
 - packer
 - pgadmin3
@@ -48,7 +48,6 @@ formulas:
 - mercurial
 - nmap
 - node
-- nvm
 - p7zip
 - pass
 - pypy
