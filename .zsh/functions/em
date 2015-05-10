@@ -1,0 +1,10 @@
+# -*- mode: shell-script -*-
+# vi: set ft=zsh :
+
+em() {
+  if [[ $# > 0 ]]; then
+    emacsclient -n -a "emacs" $@
+  else
+    emacsclient -n -a "emacs" .
+  fi
+}

@@ -14,7 +14,7 @@ function prompt_squeak_setup {
 
   prompt_steeef_setup "$@"
 
-  RPROMPT='$node_info[version]'
+  RPROMPT='$node_info[version]${NAVE+,}$NAVE'
 }
 
 prompt_squeak_setup "$@"
