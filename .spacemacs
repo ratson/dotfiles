@@ -146,6 +146,7 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  (setq neo-show-hidden-files nil)
   (setq-default sh-basic-offset 2
                 web-mode-markup-indent-offset 2
                 web-mode-code-indent-offset 2
