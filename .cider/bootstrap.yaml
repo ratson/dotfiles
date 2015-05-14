@@ -1,6 +1,8 @@
 after-scripts:
 - brew linkapps --local
 - ./install-node-packages.sh
+- pip install peep
+- peep install -U -r requirements.txt
 - ./cleanup.sh
 casks:
 - android-file-transfer
