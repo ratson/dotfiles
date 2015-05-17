@@ -3,8 +3,8 @@
 
 em() {
   if [[ $# > 0 ]]; then
-    emacsclient -n -a "emacs" $@
+    emacsclient -n -a "vim" $@
   else
-    emacsclient -n -a "emacs" .
+    emacsclient -n -a "vim" .
   fi
 }
