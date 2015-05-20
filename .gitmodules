@@ -16,3 +16,6 @@
 [submodule ".nvm"]
 	path = .nvm
 	url = https://github.com/creationix/nvm.git
+[submodule ".zsh/git-annex-completion"]
+	path = .zsh/git-annex-completion
+	url = https://github.com/Schnouki/git-annex-zsh-completion.git
