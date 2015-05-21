@@ -20,6 +20,8 @@
 	dw = diff --color-words
 	# grep
 	todo = grep --break --heading -e ' FIXME *' -e ' TODO *'
+	# ls-files
+	ls-ignored = ls-files --others -i --exclude-standard
 	# log
 	log-graph = log --all --decorate --graph
 	log-refs = log --all --decorate --graph --no-merges --oneline --simplify-by-decoration
