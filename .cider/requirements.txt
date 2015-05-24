@@ -12,6 +12,8 @@ passpie>=0.1.3
 
 peep>=2.4.1
 
+thefuck>=1.43
+
 # sha256: yPBQNkNxWLxnTqUD5O3HuDjwXkdEBw2LO3txg0a4b5E
 tmuxp>=0.8.1
 
