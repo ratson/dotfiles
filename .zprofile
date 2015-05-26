@@ -86,5 +86,7 @@ fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
 
+export CHECKPOINT_DISABLE=1
+
 # Make Zsh the default shell
 [[ $SHELL =~ "zsh" ]] || export SHELL=`builtin which zsh`
