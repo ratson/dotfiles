@@ -1,0 +1,30 @@
+#!/bin/bash
+
+set -e
+
+function usage() {
+cat <<-EOF
+  USAGE: $0 [init <repository> | up | <git-command>]
+EOF
+}
+
+export GIT_WORK_TREE=$HOME
+export GIT_DIR=${DOTFILES_GIT_DIR:-$HOME/.dotfiles.git}
+
+cd "$GIT_WORK_TREE"
+
+if [ $# == 0 ]; then
+  git status
+elif [ "$1" == "init" ]; then
+  if [ $# != 2 ]; then
+    usage
+    exit 1
+  fi
+  cd /tmp
+  git --work-tree=/tmp/dotfiles_work-tree clone --separate-git-dir="$GIT_DIR" $2
+  git config core.worktree "$GIT_WORK_TREE"
+elif [ "$1" == "up" ]; then
+  git fetch -p && git rebase --autostash origin/master && git submodule update --init --recursive
+else
+  git $@
+fi
