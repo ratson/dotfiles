@@ -1,0 +1,41 @@
+loadplugins '\.(js|penta)$'
+group user
+
+set guioptions=bCrsT
+
+" set shell to zsh
+set shell=/usr/local/bin/zsh
+
+" use home row letters for hints instead of numbers
+set hintkeys='sadfjklewcmpgh'
+
+" same as vim; highlight search results
+set hlfind
+
+" faster scrolling
+map -b j 5j
+map -b k 5k
+
+" vimium like keymap
+nmap d <C-d>
+nmap u <C-u>
+nmap J :tabnext<CR>
+nmap K :tabprevious<CR>
+nmap x :quit<CR>
+nmap X :undo<CR>
+
+" vim like naviation
+cmap <C-j> <Tab>
+cmap <C-k> <S-Tab>
+
+" Emacs navigation in command line and insert mode
+cmap <C-n> <Tab>
+cmap <C-p> <S-Tab>
+
+" swap colon
+nmap ; :
+
+" map some regular-Firefox old habits
+nmap <M-f> /
+" nmap <M-l> O
+" nmap <M-k> S
