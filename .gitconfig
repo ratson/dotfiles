@@ -48,10 +48,18 @@
 	# snippets
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 	unassume-all = "!git assumed | xargs git unassume"
+[color]
+	ui = true
+[color "diff"]
+	meta = yellow
+	frag = magenta
+	old = red
+	whitespace = red reverse
 [commit]
 	template = ~/.gitmessage
 [core]
 	excludesfile = ~/.gitignore_global
+	whitespace = -indent-with-non-tab,trailing-space,cr-at-eol,tab-in-indent
 [include]
 	path = .gitconfig_local
 [grep]
