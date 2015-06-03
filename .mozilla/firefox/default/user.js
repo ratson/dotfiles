@@ -28,6 +28,9 @@ user_pref("toolkit.telemetry.rejected", true);
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 
+// Disable Pocket
+user_pref("browser.pocket.enabled", false);
+
 // Don't send my query until I hit Enter
 user_pref("browser.search.suggest.enabled", false);
 
