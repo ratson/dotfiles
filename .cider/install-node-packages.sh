@@ -4,10 +4,14 @@ packages=(
 bower
 coffee-script
 coffeelint
+concurrently
 csslint
+esformatter-braces
+esformatter-jsx
 eslint
 eslint-plugin-react
 hoxy
+jsfmt
 jshint
 nesh
 npm

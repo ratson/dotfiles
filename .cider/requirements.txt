@@ -1,24 +1,12 @@
-# sha256: Q27Np-d_Uet9vlDbZR02-GliBD4zFCg7BHzv8GeUApo
-eg>=0.1.0
-
-# sha256: Ldcp_O7DxjgRaQQMjDoarR15BMD9jLpL6h_E59JAbIY
+cookiecutter>=1.0.0
+eg>=0.1.1
 git-up>=1.3.0
-
-# sha256: YmiBoi8lJjX-K8crVU4fuyuAvNYmED3iHtES6gwCTjc
 nodeenv>=0.13.2
-
-# sha256: K9IgvTpmEei0gglDDCs8tvCFCRIz_z2Tn71mLtfMHT4
-passpie>=0.1.3
-
-peep>=2.4.1
-
-thefuck>=1.43
-
-# sha256: yPBQNkNxWLxnTqUD5O3HuDjwXkdEBw2LO3txg0a4b5E
+passpie>=0.3.0
+pdbpp>=0.8.2
+pgcli>=0.17.0
+pudb>=2015.3
+thefuck>=1.45
 tmuxp>=0.8.1
-
-# sha256: 4d7zfZLz3-qqrBr1g5wcVcybP3WevfI3CQsOVBgCths
-virtualenv>=12.1.1
-
-# sha256: aWjMAYnQETcBQm6pLmmLikFBki7JoDFA2zEgxFMoaLU
+virtualenv>=13.0.3
 virtualenvwrapper>=4.5.1

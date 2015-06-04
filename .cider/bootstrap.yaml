@@ -1,13 +1,13 @@
 after-scripts:
 - brew linkapps --local
 - ./install-node-packages.sh
-- pip install peep
-- peep install -U -r requirements.txt
+- pip install -U -r requirements.txt
 - ./cleanup.sh
 casks:
 - android-file-transfer
 - atom
 - caffeine
+- chicken
 - chromium
 - firefox
 - font-inconsolata
@@ -16,6 +16,7 @@ casks:
 - font-source-code-pro
 - google-chrome
 - google-chrome-canary
+- grandperspective
 - imageoptim
 - inkscape
 - iterm2-beta
@@ -40,6 +41,7 @@ formulas:
 - dnsmasq
 - dos2unix
 - emacs --with-cocoa --with-glib --with-gnutls --with-librsvg --with-mailutils --HEAD
+- emacs-mac --with-glib --with-gnutls --with-spacemacs-icon
 - fasd
 - ffind
 - findutils
@@ -80,3 +82,4 @@ taps:
 - homebrew/php
 - homebrew/versions
 - homebrew/x11
+- railwaycat/emacsmacport
