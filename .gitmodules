@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/vim-sensible"]
 	path = .vim/bundle/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule ".config/spacemacs/atom"]
-	path = .config/spacemacs/atom
-	url = https://github.com/r4ts0n/spacemacs-atom.git
 [submodule ".nvm"]
 	path = .nvm
 	url = https://github.com/creationix/nvm.git

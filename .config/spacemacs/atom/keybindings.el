@@ -1,0 +1,6 @@
+(global-set-key (kbd "s-/") 'evilnc-comment-or-uncomment-lines)
+(global-set-key (kbd "s-0") 'spacemacs/reset-font-size)
+(global-set-key (kbd "s-P") 'helm-M-x)
+(global-set-key (kbd "s-\\") 'neotree-toggle)
+(global-set-key (kbd "s-p") 'helm-projectile-find-file)
+(global-set-key (kbd "s-t") 'helm-find-files)
