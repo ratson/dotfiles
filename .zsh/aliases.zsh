@@ -11,6 +11,9 @@ alias dam='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 # shorthand
 alias t=task
 alias va=vagrant
+alias wko=workon
+alias pas=passpie
+alias pasc="passpie copy"
 
 # typo
 alias taks=task
