@@ -6,7 +6,16 @@
 
 g() {
   if [[ $# > 0 ]]; then
-    git $@
+    if [[ $1 == "c" ]]; then
+      shift
+      while [ -n "$1" ]; do
+        MESSAGE="$MESSAGE $1"
+        shift
+      done
+      git commit -m "$MESSAGE"
+    else
+      git $@
+    fi
   else
     git status
   fi
