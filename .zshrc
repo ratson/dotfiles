@@ -10,8 +10,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   unalias g
 fi
 
+function home_source {
+  [[ -f $HOME/$1 ]] && source $HOME/$1
+}
 
-[[ -f $HOME/.zsh/aliases.zsh ]] && source $HOME/.zsh/aliases.zsh
+home_source .zsh/yeoman/yeoman.plugin.zsh
+home_source .zsh/aliases.zsh
 
 function {
   local pfunction_glob='^([_.]*|prompt_*_setup|README*)(-.N:t)'

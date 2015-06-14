@@ -1,5 +1,7 @@
 after-scripts:
 - brew linkapps --local
+- pip3 install peru
+- peru --sync-dir=$HOME/ --peru-file=./peru.yaml sync
 - ./install-node-packages.sh
 - pip install -U -r requirements.txt
 - ./cleanup.sh
@@ -51,6 +53,7 @@ formulas:
 - go
 - jsonpp
 - mercurial
+- multitail
 - nmap
 - node
 - p7zip

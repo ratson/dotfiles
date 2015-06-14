@@ -1,0 +1,6 @@
+imports:
+  zsh-yeoman: .zsh/yeoman/
+
+git module zsh-yeoman:
+  url: https://github.com/edouard-lopez/yeoman-zsh-plugin.git
+  rev: 01a62ad286e03c36869504164138f3d5f4a0418e
