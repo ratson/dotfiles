@@ -1,5 +1,10 @@
 imports:
   zsh-yeoman: .zsh/yeoman/
+  prezto: .zprezto
+
+git module prezto:
+  url: https://github.com/sorin-ionescu/prezto.git
+  rev: f2a826e963f06a204dc0e09c05fc3e5419799f52
 
 git module zsh-yeoman:
   url: https://github.com/edouard-lopez/yeoman-zsh-plugin.git
