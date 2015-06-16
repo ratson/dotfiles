@@ -1,10 +1,20 @@
 imports:
+  nvm: .nvm/
+  prezto: .zprezto/
+  zsh-git-annex: .zsh/git-annex-completion/
   zsh-yeoman: .zsh/yeoman/
-  prezto: .zprezto
+
+git module nvm:
+  url: https://github.com/creationix/nvm.git
+  rev: fe044c5e3b2fdbcd0ed4ad52a946fd48f30ecb09
 
 git module prezto:
   url: https://github.com/sorin-ionescu/prezto.git
   rev: f2a826e963f06a204dc0e09c05fc3e5419799f52
+
+git module zsh-git-annex:
+  url: https://github.com/Schnouki/git-annex-zsh-completion.git
+  rev: c39f33d5d740b46285629010ab6bf95d2f28ac90
 
 git module zsh-yeoman:
   url: https://github.com/edouard-lopez/yeoman-zsh-plugin.git
