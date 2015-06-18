@@ -10,12 +10,20 @@ esformatter-braces
 esformatter-jsx
 eslint
 eslint-plugin-react
+generator-generator
+generator-gulp-webapp
+generator-react-webpack
+grunt-cli
+gulp
 hoxy
 jsfmt
 jshint
 nesh
 npm
 npm-check-updates
+standard
+standard-format
+yo
 )
 
 function install_package {
