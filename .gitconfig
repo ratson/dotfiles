@@ -32,6 +32,8 @@
 	mn = merge --no-ff
 	# pull
 	p = pull --rebase
+	# rebase
+	rebasex = rebase --ignore-date
 	# shortlog
 	contrib = shortlog --no-merges --numbered --summary
 	# status
