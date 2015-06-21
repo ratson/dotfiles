@@ -9,3 +9,5 @@
   editor:
     showInvisibles: true
     showIndentGuide: true
+  pigments:
+    markerType: "dot"
