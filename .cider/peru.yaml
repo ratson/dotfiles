@@ -6,7 +6,7 @@ imports:
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: fe044c5e3b2fdbcd0ed4ad52a946fd48f30ecb09
+  rev: 6b8fd19d7627714f088849884fce72fdd97f49e4
 
 git module prezto:
   url: https://github.com/sorin-ionescu/prezto.git
