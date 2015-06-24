@@ -22,6 +22,7 @@ casks:
 - imageoptim
 - inkscape
 - iterm2-beta
+- mpv
 - opera
 - packer
 - pgadmin3
@@ -50,6 +51,7 @@ formulas:
 - fortune
 # git provided completion hides better zsh one, so install without it
 - git --with-blk-sha1 --with-brewed-curl --with-brewed-openssl --with-brewed-svn --with-gettext --with-pcre --with-persistent-https --without-completions
+- git-annex
 - go
 - jsonpp
 - mercurial
