@@ -33,7 +33,7 @@
 	# pull
 	p = pull --rebase
 	# rebase
-	rebasex = rebase --ignore-date
+	rebasex = rebase --committer-date-is-author-date --ignore-date
 	# shortlog
 	contrib = shortlog --no-merges --numbered --summary
 	# status
