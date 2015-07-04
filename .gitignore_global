@@ -1,5 +1,6 @@
 # -*- mode: gitignore; -*-
 
+*.key
 *.pid
 
 ### Android ###
