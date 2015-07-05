@@ -16,7 +16,7 @@ function home_source {
 
 home_source .zsh/yeoman/yeoman.plugin.zsh
 home_source .zsh/aliases.zsh
-which tmuxp.zsh && source tmuxp.zsh && alias tm=tmuxp load
+which tmuxp.zsh > /dev/null && source tmuxp.zsh && alias tm='tmuxp load'
 
 function {
   local pfunction_glob='^([_.]*|prompt_*_setup|README*)(-.N:t)'
