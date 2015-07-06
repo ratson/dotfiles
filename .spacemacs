@@ -28,9 +28,34 @@
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/config'.
-   dotspacemacs-additional-packages '(editorconfig)
+   dotspacemacs-additional-packages '(annotate
+                                      auth-password-store
+                                      chronos
+                                      cloc
+                                      color-identifiers-mode
+                                      dired-k
+                                      editorconfig
+                                      electric-spacing
+                                      elfeed
+                                      firestarter
+                                      git-auto-commit-mode
+                                      helm-dash
+                                      olivetti
+                                      org-dashboard
+                                      org-doing
+                                      org-journal
+                                      org-projectile
+                                      ox-rst
+                                      pass
+                                      sphinx-doc
+                                      swiper
+                                      swiper-helm
+                                      vimrc-mode)
    ;; A list of packages and/or extensions that will not be install and loaded.
-   dotspacemacs-excluded-packages '(geeknote helm-spotify php-extras spotify)
+   dotspacemacs-excluded-packages '(geeknote
+                                    helm-spotify
+                                    php-extras
+                                    spotify)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'
