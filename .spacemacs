@@ -183,6 +183,10 @@ layers configuration."
   (add-to-list 'auto-mode-alist '("\\.taskrc\\'" . conf-mode))
   (add-to-list 'auto-mode-alist '("\\.zpreztorc\\'" . sh-mode))
   (global-auto-revert-mode t)
+  (add-hook 'json-mode-hook
+            (lambda ()
+              (make-local-variable 'js-indent-level)
+              (setq js-indent-level 4)))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
