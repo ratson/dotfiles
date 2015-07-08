@@ -187,6 +187,9 @@ layers configuration."
             (lambda ()
               (make-local-variable 'js-indent-level)
               (setq js-indent-level 4)))
+  (add-hook 'org-journal-mode-hook
+            (lambda ()
+              (setq ethan-wspace-errors (remove 'no-nl-eof ethan-wspace-errors))))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
