@@ -1,9 +1,8 @@
 after-scripts:
 - brew linkapps --local
-- pip3 install peru
-- peru --sync-dir=$HOME/ --peru-file=./peru.yaml sync
-- ./install-node-packages.sh
-- pip install -U -r requirements.txt
+- peru --sync-dir=$HOME/ --file=./peru.yaml reup
+- pip3 install -U -r requirements.txt
+- apm upgrade --no-confirm
 - ./cleanup.sh
 casks:
 - android-file-transfer
@@ -22,7 +21,6 @@ casks:
 - imageoptim
 - inkscape
 - iterm2-beta
-- mpv
 - opera
 - packer
 - pgadmin3
@@ -36,14 +34,12 @@ casks:
 - xquartz
 formulas:
 - aspell --with-lang-en
-- boot2docker
 - brew-cask
 - cheat
 - cloc
 - coreutils
 - dnsmasq
 - dos2unix
-- emacs --with-cocoa --with-glib --with-gnutls --with-librsvg --with-mailutils --HEAD
 - emacs-mac --with-glib --with-gnutls --with-spacemacs-icon
 - fasd
 - ffind
@@ -58,7 +54,9 @@ formulas:
 - multitail
 - nmap
 - node
+- nvm
 - p7zip
+- pandoc
 - pass
 - pypy
 - python
@@ -73,9 +71,11 @@ formulas:
 - tree
 - tmux
 - trash
+- vegeta
 - vim
 - w3m
 - youtube-dl
+- zopfli
 - zsh --disable-etcdir
 taps:
 - caskroom/cask
@@ -87,4 +87,5 @@ taps:
 - homebrew/php
 - homebrew/versions
 - homebrew/x11
+- neovim/neovim
 - railwaycat/emacsmacport
