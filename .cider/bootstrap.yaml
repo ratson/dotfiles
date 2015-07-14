@@ -3,6 +3,7 @@ after-scripts:
 - peru --sync-dir=$HOME/ --file=./peru.yaml reup
 - pip3 install -U -r requirements.txt
 - apm upgrade --no-confirm
+- vagrant plugin update
 - ./cleanup.sh
 casks:
 - android-file-transfer
