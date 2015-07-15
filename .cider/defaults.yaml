@@ -1,24 +1,24 @@
 NSGlobalDomain:
-  AppleShowAllExtensions: true
+  AppleShowAllExtensions: 1
   # Disable smart quotes, smart dashes and spelling - annoying when dealing with code
   NSAutomaticDashSubstitutionEnabled: false
   NSAutomaticQuoteSubstitutionEnabled: false
 com.apple.dashboard:
   # Disable Dashboard
-  mcx-disabled: true
+  mcx-disabled: 1
 com.apple.desktopservices:
   # Avoid creating .DS_Store files on network volumes
-  DSDontWriteNetworkStores: true
+  DSDontWriteNetworkStores: 1
 com.apple.dock:
-  autohide: true
+  autohide: 1
   persistent-apps: []
   tilesize: 28
 com.apple.finder:
   # When performing a search, search the current folder by default.
   FXDefaultSearchScope: SCcf
-  QLEnableTextSelection: true
-  ShowPathbar: true
-  ShowStatusBar: true
+  QLEnableTextSelection: 1
+  ShowPathbar: 1
+  ShowStatusBar: 1
 com.apple.menuextra.clock:
   DateFormat: EEE d MMM  h:mm a
 com.apple.screensaver:
@@ -39,22 +39,22 @@ com.apple.screensaver:
   wvous-bl-modifier: 0
 com.apple.AppleMultitouchTrackpad:
   # Tap to click
-  Clicking: true
+  Clicking: 1
 com.apple.CrashReporter:
   # Disable the crash reporter
   DialogType: none
 com.apple.Safari:
   HomePage: about:blank
-  IncludeDevelopMenu: true
-  IncludeInternalDebugMenu: true
+  IncludeDevelopMenu: 1
+  IncludeInternalDebugMenu: 1
   # Privacy: don’t send search queries to Apple
   UniversalSearchEnabled: false
 com.apple.TimeMachine:
-  DoNotOfferNewDisksForBackup: true
+  DoNotOfferNewDisksForBackup: 1
 com.google.Keystone.Agent:
   checkInterval: 0
 com.googlecode.iterm2:
-  DimInactiveSplitPanes: true
+  DimInactiveSplitPanes: 1
   FocusFollowsMouse: false
   UseLionStyleFullscreen: false
-  WindowNumber: true
+  WindowNumber: 1
