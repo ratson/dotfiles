@@ -3,6 +3,9 @@ NSGlobalDomain:
   # Disable smart quotes, smart dashes and spelling - annoying when dealing with code
   NSAutomaticDashSubstitutionEnabled: false
   NSAutomaticQuoteSubstitutionEnabled: false
+com.apple.appstore:
+  WebKitDeveloperExtras: 1
+  ShowDebugMenu: 1
 com.apple.dashboard:
   # Disable Dashboard
   mcx-disabled: 1
@@ -43,11 +46,15 @@ com.apple.AppleMultitouchTrackpad:
 com.apple.CrashReporter:
   # Disable the crash reporter
   DialogType: none
+com.apple.DiskUtility:
+  DUDebugMenuEnabled: 1
+  advanced-image-options: 1
 com.apple.Safari:
   HomePage: about:blank
   IncludeDevelopMenu: 1
   IncludeInternalDebugMenu: 1
   # Privacy: don’t send search queries to Apple
+  SuppressSearchSuggestions: 1
   UniversalSearchEnabled: false
 com.apple.TimeMachine:
   DoNotOfferNewDisksForBackup: 1
