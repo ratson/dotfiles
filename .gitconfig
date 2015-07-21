@@ -1,4 +1,6 @@
 [alias]
+	# add
+	aa = add -A
 	# branch
 	br = branch
 	# checkout
@@ -11,6 +13,7 @@
 	amendx = commit --amend --no-edit --reset-author
 	ca = commit --amend
 	ci = commit
+	cm = commit -m
 	# daemon
 	serve = daemon --base-path=. --export-all --reuseaddr --verbose
 	# diff
@@ -31,7 +34,7 @@
 	mm = merge
 	mn = merge --no-ff
 	# pull
-	p = pull --rebase
+	p = pull --rebase --stat
 	# rebase
 	rebasex = rebase --committer-date-is-author-date --ignore-date
 	# shortlog
