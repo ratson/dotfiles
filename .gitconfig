@@ -1,5 +1,6 @@
 [alias]
 	# add
+	a = add .
 	aa = add -A
 	# branch
 	br = branch
