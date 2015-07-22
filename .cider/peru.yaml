@@ -4,6 +4,7 @@ imports:
   nvm: .nvm/
   prezto: .zprezto/
   spacemacs: .emacs.d/
+  spacemacs-private: .emacs.d/private/
   zsh-git-annex: .zsh/git-annex-completion/
 
 git module git-change-date:
@@ -14,13 +15,13 @@ git module git-change-date:
   rev: 7d69b83e521aa0fa2eb7c3f1e62984f5fd74bf6d
 
 git module git-rewrite-author:
-  url: https://github.com/davidfokkema/git-rewrite-author.git
+  url: https://github.com/ratson/git-rewrite-author.git
   pick: git-rewrite-author
-  rev: a2730739650f81bc4305aa32b6ef2e304f7f67b3
+  rev: 6eb490e1dbf7abf0dd6f63ce0320f87206d7a9f6
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: c742ab7e66d8b5c432907efd74e8b5bc7be8385e
+  rev: 1ba8a96ec9898c3e1f28f9d6b36af4a34f580788
 
 git module prezto:
   url: https://github.com/sorin-ionescu/prezto.git
@@ -29,7 +30,12 @@ git module prezto:
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
-  rev: 659d585c7a8046f8b1f26088499227f00f59fcbf
+  rev: 02585f72a21812427ea47967ea083626b78fc3b8
+
+git module spacemacs-private:
+  url: https://github.com/ratson/spacemacs-private.git
+  reup: master
+  rev: 49a58bd9d120ca268f376213b2cc747c108b3f2f
 
 git module zsh-git-annex:
   url: https://github.com/Schnouki/git-annex-zsh-completion.git
