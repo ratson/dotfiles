@@ -23,7 +23,7 @@
 	ds = diff --staged
 	dw = diff --color-words
 	# grep
-	todo = grep --break --heading -e ' FIXME *' -e ' TODO *'
+	todo = grep --break --heading -e ' FIXME *' -e ' TODO *' -e ' XXX *'
 	# ls-files
 	ls-ignored = ls-files --others -i --exclude-standard
 	# log
@@ -53,6 +53,7 @@
 	unassume = update-index --no-assume-unchanged
 	# snippets
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+	trash = "!git add . && git commit -m 'trash' && git reset --hard HEAD^"
 	unassume-all = "!git assumed | xargs git unassume"
 [color]
 	ui = true
