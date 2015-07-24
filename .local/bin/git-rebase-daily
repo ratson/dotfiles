@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+upstream=$1
+
+git rebase -i --exec 'export GIT_COMMITTER_DATE=$(date -j -f "%s" $(($(git log -1 --format=%ct HEAD~1)+$(jot -r 1 64800 86400))) "+%Y-%m-%dT%H:%M:%S%z") && git commit --amend --no-edit --date="$GIT_COMMITTER_DATE"' $upstream
+
+echo "From $(git log -1 --format=%cD $upstream)"
