@@ -1,4 +1,5 @@
 imports:
+  gimp-plugin-export-layers: Library/Application Support/GIMP/2.8/plug-ins
   git-change-date: .local/bin/
   git-rewrite-author: .local/bin/
   nvm: .nvm/
@@ -6,6 +7,13 @@ imports:
   spacemacs: .emacs.d/
   spacemacs-private: .emacs.d/private/
   zsh-git-annex: .zsh/git-annex-completion/
+
+git module gimp-plugin-export-layers:
+  url: https://github.com/khalim19/gimp-plugin-export-layers.git
+  pick:
+    - export_layers.py
+    - export_layers/
+  rev: a1fae5e604dffcb7926c0e95c788e0097cea82c9
 
 git module git-change-date:
   url: https://gist.github.com/5875828.git
@@ -21,7 +29,7 @@ git module git-rewrite-author:
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: 1ba8a96ec9898c3e1f28f9d6b36af4a34f580788
+  rev: 649e416017827575904d95b5d1dc7b7472deafb1
 
 git module prezto:
   url: https://github.com/sorin-ionescu/prezto.git
@@ -30,12 +38,12 @@ git module prezto:
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
-  rev: 02585f72a21812427ea47967ea083626b78fc3b8
+  rev: 1df4cfe206d2c4b7a136bce9f868fe609bf25afc
 
 git module spacemacs-private:
   url: https://github.com/ratson/spacemacs-private.git
   reup: master
-  rev: 49a58bd9d120ca268f376213b2cc747c108b3f2f
+  rev: bd46f33960f3ad614d5e9f2e2db437d1829bf543
 
 git module zsh-git-annex:
   url: https://github.com/Schnouki/git-annex-zsh-completion.git
