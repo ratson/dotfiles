@@ -2,10 +2,12 @@ imports:
   gimp-plugin-export-layers: Library/Application Support/GIMP/2.8/plug-ins
   git-change-date: .local/bin/
   git-rewrite-author: .local/bin/
+  git-shift: .local/bin/
   nvm: .nvm/
   prezto: .zprezto/
   spacemacs: .emacs.d/
   spacemacs-private: .emacs.d/private/
+  sublime-omni-markup-previewer: Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer
   zsh-git-annex: .zsh/git-annex-completion/
 
 git module gimp-plugin-export-layers:
@@ -13,7 +15,7 @@ git module gimp-plugin-export-layers:
   pick:
     - export_layers.py
     - export_layers/
-  rev: a1fae5e604dffcb7926c0e95c788e0097cea82c9
+  rev: 731d7dc80d008d6a72ca21e2f63016cb20881449
 
 git module git-change-date:
   url: https://gist.github.com/5875828.git
@@ -22,6 +24,11 @@ git module git-change-date:
   executable: git-change-date
   rev: 7d69b83e521aa0fa2eb7c3f1e62984f5fd74bf6d
 
+git module git-shift:
+  url: https://github.com/gitbits/git-shift.git
+  pick: git-shift
+  rev: 4cc16ab0e8ebb232cc28db4dc40f6dec51569983
+
 git module git-rewrite-author:
   url: https://github.com/ratson/git-rewrite-author.git
   pick: git-rewrite-author
@@ -29,21 +36,26 @@ git module git-rewrite-author:
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: 649e416017827575904d95b5d1dc7b7472deafb1
+  rev: 6dd6a0d213703a516df545970f4d8964319ede47
 
 git module prezto:
   url: https://github.com/sorin-ionescu/prezto.git
-  rev: 7227c4f0bef5f8ae787c65150d7a7403394fff48
+  rev: 4f19700919c8ebbaf75755fc0d03716d13183f49
 
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
-  rev: 1df4cfe206d2c4b7a136bce9f868fe609bf25afc
+  rev: 84fc47a10630ff7b54dd7e53e2a4b3f8434e3f57
 
 git module spacemacs-private:
   url: https://github.com/ratson/spacemacs-private.git
   reup: master
   rev: bd46f33960f3ad614d5e9f2e2db437d1829bf543
+
+git module sublime-omni-markup-previewer:
+  url: https://github.com/timonwong/OmniMarkupPreviewer.git
+  reup: master
+  rev: 21921ac7a99d2b5924a2219b33679a5b53621392
 
 git module zsh-git-annex:
   url: https://github.com/Schnouki/git-annex-zsh-completion.git
