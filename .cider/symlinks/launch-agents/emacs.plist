@@ -10,7 +10,7 @@
   <string>emacs</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/local/Cellar/emacs/25.0-dev/Emacs.app/Contents/MacOS/Emacs</string>
+    <string>/usr/local/opt/emacs/Emacs.app/Contents/MacOS/Emacs</string>
   </array>
   <key>RunAtLoad</key>
   <true/>
