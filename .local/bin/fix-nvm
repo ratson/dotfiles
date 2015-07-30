@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Download signed node for nvm
+
+NODE_BIN=`which node` || exit 1
+codesign -dv $NODE_BIN && exit 0
+
+DOWNLOAD_DIR="$HOME/.nvm/tmp"
+NODE_VERSION=`node --version`
+
+cd "$DOWNLOAD_DIR"
+wget "https://nodejs.org/dist/$NODE_VERSION/node-$NODE_VERSION.pkg"
+xar -xf "node-$NODE_VERSION.pkg"
+tar xf "local.pkg/Payload"
+ditto bin/node $NODE_BIN
+
+function cleanup {
+  rm -rf "$DOWNLOAD_DIR"
+}
+trap cleanup EXIT
