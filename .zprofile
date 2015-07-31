@@ -56,6 +56,7 @@ fpath=(
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  /usr/local/opt/openssl/bin
   /usr/local/{bin,sbin}
   $path
 )
@@ -87,6 +88,7 @@ fi
 TMPPREFIX="${TMPDIR%/}/zsh"
 
 export CHECKPOINT_DISABLE=1
+export HOMEBREW_NO_ANALYTICS=1
 export yeoman_test=1
 
 # Make Zsh the default shell
