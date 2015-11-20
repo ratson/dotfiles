@@ -1,21 +1,28 @@
 imports:
+  git-rewrite-author: .local/bin/
   nvm: .nvm/
   prezto: .zprezto/
+  spacemacs: .emacs.d/
   zsh-git-annex: .zsh/git-annex-completion/
-  zsh-yeoman: .zsh/yeoman/
+
+git module git-rewrite-author:
+  url: https://github.com/davidfokkema/git-rewrite-author.git
+  pick: git-rewrite-author
+  rev: a2730739650f81bc4305aa32b6ef2e304f7f67b3
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: 6b8fd19d7627714f088849884fce72fdd97f49e4
+  rev: c742ab7e66d8b5c432907efd74e8b5bc7be8385e
 
 git module prezto:
   url: https://github.com/sorin-ionescu/prezto.git
-  rev: f2a826e963f06a204dc0e09c05fc3e5419799f52
+  rev: 7227c4f0bef5f8ae787c65150d7a7403394fff48
+
+git module spacemacs:
+  url: https://github.com/syl20bnr/spacemacs.git
+  reup: develop
+  rev: 659d585c7a8046f8b1f26088499227f00f59fcbf
 
 git module zsh-git-annex:
   url: https://github.com/Schnouki/git-annex-zsh-completion.git
-  rev: c39f33d5d740b46285629010ab6bf95d2f28ac90
-
-git module zsh-yeoman:
-  url: https://github.com/edouard-lopez/yeoman-zsh-plugin.git
-  rev: 01a62ad286e03c36869504164138f3d5f4a0418e
+  rev: e87e7db7f01505e82fc0af36e9427b04f906223c
