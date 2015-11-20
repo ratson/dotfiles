@@ -1,9 +1,17 @@
 imports:
+  git-change-date: .local/bin/
   git-rewrite-author: .local/bin/
   nvm: .nvm/
   prezto: .zprezto/
   spacemacs: .emacs.d/
   zsh-git-annex: .zsh/git-annex-completion/
+
+git module git-change-date:
+  url: https://gist.github.com/5875828.git
+  move:
+    git-change-date.sh: git-change-date
+  executable: git-change-date
+  rev: 7d69b83e521aa0fa2eb7c3f1e62984f5fd74bf6d
 
 git module git-rewrite-author:
   url: https://github.com/davidfokkema/git-rewrite-author.git
