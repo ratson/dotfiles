@@ -15,6 +15,7 @@
 	ca = commit --amend
 	ci = commit
 	cm = commit -m
+	first-commit = commit -m 'Initial commit'
 	# daemon
 	serve = daemon --base-path=. --export-all --reuseaddr --verbose
 	# diff
@@ -41,8 +42,10 @@
 	rebase-author = rebase --ignore-date --interactive --exec \"git commit --amend --reset-author --no-edit\"
 	# remote
 	rup = remote update
+	# rev-list
+	root-commits = rev-list --max-parents=0 HEAD
 	# shortlog
-	contrib = shortlog --no-merges --numbered --summary
+	rank = shortlog --no-merges --numbered --summary
 	# status
 	st = status --branch --short
 	# submodule
@@ -56,11 +59,14 @@
 	unassume = update-index --no-assume-unchanged
 	# snippets
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
-  exclude = !sh -c 'echo "$1" >> .git/info/exclude' -
+	exclude = !sh -c 'echo "$1" >> .git/info/exclude' -
 	count-lines = "!git ls-files -z | xargs -0 wc -l"
 	rebm = !sh -c 'git checkout "$1" && git rebase master' -
 	trash = "!git add . && git commit -m 'trash' && git reset --hard HEAD^"
 	unassume-all = "!git assumed | xargs git unassume"
+	# typo
+	grp = grep
+	greo = grep
 [color]
 	ui = true
 [color "diff"]
