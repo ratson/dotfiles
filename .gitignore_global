@@ -1,6 +1,8 @@
 # -*- mode: gitignore; -*-
 
+*.db
 *.key
+*.log
 *.pid
 
 ### Android ###
