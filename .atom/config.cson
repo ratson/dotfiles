@@ -1,5 +1,6 @@
 "*":
   core:
+    automaticallyUpdate: false
     disabledPackages: [
       "exception-reporting"
       "feedback"
