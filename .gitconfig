@@ -79,15 +79,17 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	whitespace = -indent-with-non-tab,trailing-space,cr-at-eol,tab-in-indent
-[include]
-	path = .gitconfig_local
+[format]
+	pretty = fuller
 [grep]
 	linenumber = true
+[include]
+	path = .gitconfig_local
 [push]
 	default = simple
+[rebase]
+	stat = true
 [rerere]
 	enabled = true
 [tig]
 	mouse = yes
-[format]
-	pretty = fuller
