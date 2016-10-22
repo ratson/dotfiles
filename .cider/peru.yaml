@@ -1,6 +1,8 @@
 imports:
   gimp-plugin-export-layers: Library/Application Support/GIMP/2.8/plug-ins
   git-change-date: .local/bin/
+  git-remote-gcrypt: .local/bin/
+  git-remote-hg: .local/bin/
   git-rewrite-author: .local/bin/
   git-shift: .local/bin/
   nvm: .nvm/
@@ -24,15 +26,25 @@ git module git-change-date:
   executable: git-change-date
   rev: 7d69b83e521aa0fa2eb7c3f1e62984f5fd74bf6d
 
-git module git-shift:
-  url: https://github.com/gitbits/git-shift.git
-  pick: git-shift
-  rev: 4cc16ab0e8ebb232cc28db4dc40f6dec51569983
+git module git-remote-gcrypt:
+  url: https://github.com/spwhitton/git-remote-gcrypt.git
+  pick: git-remote-gcrypt
+  rev: aaa874fa5b29b68d3951a8ed712df06c735c05e2
+
+git module git-remote-hg:
+  url: https://github.com/felipec/git-remote-hg.git
+  pick: git-remote-hg
+  rev: 822c6e4b03d9e66df8261f323caded716e8d8b8d
 
 git module git-rewrite-author:
   url: https://github.com/ratson/git-rewrite-author.git
   pick: git-rewrite-author
   rev: 6eb490e1dbf7abf0dd6f63ce0320f87206d7a9f6
+
+git module git-shift:
+  url: https://github.com/gitbits/git-shift.git
+  pick: git-shift
+  rev: 4cc16ab0e8ebb232cc28db4dc40f6dec51569983
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
