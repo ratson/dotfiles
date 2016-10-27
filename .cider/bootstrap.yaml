@@ -69,6 +69,7 @@ formulas:
 - p7zip
 - pandoc
 - pass
+- peco
 - pypy
 - python
 - python3
