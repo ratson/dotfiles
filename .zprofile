@@ -37,6 +37,13 @@ if [[ -z "$LC_ALL" ]]; then
 fi
 
 #
+# golang
+#
+
+export GOPATH=/usr/local/lib/golang
+export GOBIN=$GOPATH/bin
+
+#
 # Paths
 #
 
@@ -50,15 +57,16 @@ typeset -gU cdpath fpath mailpath path
 
 fpath=(
   $HOME/.zsh/functions
-  $HOME/.zsh/prezto/functions
   $fpath
 )
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  $HOME/.local/bin
   /usr/local/opt/openssl/bin
   /usr/local/{bin,sbin}
   $path
+  $GOBIN
 )
 
 #
@@ -89,6 +97,7 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 export CHECKPOINT_DISABLE=1
 export HOMEBREW_NO_ANALYTICS=1
+export PACKER_CACHE_DIR=$HOME/.cache/packer
 export yeoman_test=1
 
 # Make Zsh the default shell

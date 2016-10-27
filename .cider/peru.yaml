@@ -6,18 +6,17 @@ imports:
   git-rewrite-author: .local/bin/
   git-shift: .local/bin/
   nvm: .nvm/
-  prezto: .zprezto/
   spacemacs: .emacs.d/
   spacemacs-private: .emacs.d/private/
   sublime-omni-markup-previewer: Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer
-  zsh-git-annex: .zsh/git-annex-completion/
+  zplug: .zplug/
 
 git module gimp-plugin-export-layers:
   url: https://github.com/khalim19/gimp-plugin-export-layers.git
   pick:
     - export_layers.py
     - export_layers/
-  rev: 731d7dc80d008d6a72ca21e2f63016cb20881449
+  rev: 577d5306d59c1faae76b15abf7464d53add89b0e
 
 git module git-change-date:
   url: https://gist.github.com/5875828.git
@@ -48,16 +47,12 @@ git module git-shift:
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: 6dd6a0d213703a516df545970f4d8964319ede47
-
-git module prezto:
-  url: https://github.com/sorin-ionescu/prezto.git
-  rev: 4f19700919c8ebbaf75755fc0d03716d13183f49
+  rev: 589a9112bd0516befea756cc8e976fb1c4b031e9
 
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
-  rev: 84fc47a10630ff7b54dd7e53e2a4b3f8434e3f57
+  rev: cdcf7070273246dd15f34287087c4fa13ce14cf7
 
 git module spacemacs-private:
   url: https://github.com/ratson/spacemacs-private.git
@@ -69,6 +64,6 @@ git module sublime-omni-markup-previewer:
   reup: master
   rev: 21921ac7a99d2b5924a2219b33679a5b53621392
 
-git module zsh-git-annex:
-  url: https://github.com/Schnouki/git-annex-zsh-completion.git
-  rev: e87e7db7f01505e82fc0af36e9427b04f906223c
+git module zplug:
+  url: https://github.com/zplug/zplug.git
+  rev: 754a74f433502dcd5027a9530c8702c25fba2b00
