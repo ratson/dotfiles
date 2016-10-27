@@ -1,1 +1,1 @@
-.zprezto/runcoms/zlogout
+clear
