@@ -50,6 +50,10 @@ fi
 
 zplug load --verbose
 
+# zsh variables
+HISTFILE="$HOME/.local/share/zsh_history"
+SAVEHIST=1000000
+
 # zsh-history-substring-search
 if zplug check "zsh-users/zsh-history-substring-search"; then
   zmodload zsh/terminfo
