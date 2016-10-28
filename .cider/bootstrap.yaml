@@ -43,6 +43,13 @@ casks:
 - vlc
 - xquartz
 formulas:
+# editor
+- emacs --with-cocoa --with-gnutls --with-imagemagick --verbose
+- vim
+# tmux
+- tmux
+- reattach-to-user-namespace
+# other
 - aspell --with-lang-en
 - brew-cask
 - cheat
@@ -50,7 +57,6 @@ formulas:
 - coreutils
 - dnsmasq --with-dnssec --with-libidn
 - dos2unix
-- emacs --with-cocoa --with-gnutls --with-imagemagick --verbose
 - fasd
 - ffind
 - findutils
@@ -81,10 +87,8 @@ formulas:
 - terminal-notifier
 - the_silver_searcher
 - tree
-- tmux
 - trash
 - vegeta
-- vim
 - w3m
 - xz
 - youtube-dl
