@@ -5,7 +5,6 @@ dotfiles==0.6.4
 git-up==1.4.2
 peru==1.0.1
 pgcli==1.3.1
-thefuck==3.11
 tmuxp==1.2.2
 virtualenv==15.0.3
 virtualenvwrapper==4.7.2

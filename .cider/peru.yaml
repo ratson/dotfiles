@@ -9,6 +9,8 @@ imports:
   spacemacs: .emacs.d/
   spacemacs-private: .emacs.d/private/
   sublime-omni-markup-previewer: Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer
+  vim-pathogen: .vim/
+  vim-sensible: .vim/bundle/vim-sensible/
   zplug: .zplug/
 
 git module gimp-plugin-export-layers:
@@ -47,12 +49,12 @@ git module git-shift:
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: 589a9112bd0516befea756cc8e976fb1c4b031e9
+  rev: f3cddf8271a682e0e5b2e275ab22c0445d5651cb
 
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
-  rev: cdcf7070273246dd15f34287087c4fa13ce14cf7
+  rev: aa3a799c39afab721ab47a1d24294d6a753c9e54
 
 git module spacemacs-private:
   url: https://github.com/ratson/spacemacs-private.git
@@ -63,6 +65,14 @@ git module sublime-omni-markup-previewer:
   url: https://github.com/timonwong/OmniMarkupPreviewer.git
   reup: master
   rev: 21921ac7a99d2b5924a2219b33679a5b53621392
+
+git module vim-pathogen:
+  url: https://github.com/tpope/vim-pathogen.git
+  pick: autoload
+  rev: 7ba2e1b67a8f8bcbafedaf6763580390dfd93436
+
+git module vim-sensible:
+  url: https://github.com/tpope/vim-sensible.git
 
 git module zplug:
   url: https://github.com/zplug/zplug.git
