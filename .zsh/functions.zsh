@@ -1,3 +1,8 @@
+# Make a directory and enter it
+mkd() {
+  mkdir -p "$1" && cd "$1"
+}
+
 function {
   local pfunction_glob='^([_.]*|prompt_*_setup|README*)(-.N:t)'
   local pfunction
