@@ -16,7 +16,7 @@ fi
 
 if [ -z "$SSH_CONNECTION" ]; then
   export EMACSCLIENT=emacsclient
-  export EDITOR="$EMACSCLIENT -t"
+  export EDITOR="$EMACSCLIENT -t -a 'vim'"
   export ALTERNATE_EDITOR=""
 else
   export EDITOR=$(type -P emacs || type -P vim || type -P vi)

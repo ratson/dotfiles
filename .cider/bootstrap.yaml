@@ -5,7 +5,6 @@ after-scripts:
 - pip3 install -U -r requirements.txt
 - apm upgrade --no-confirm
 - vagrant plugin update
-- ./cleanup.sh
 casks:
 # browser
 - chromium
@@ -65,6 +64,7 @@ formulas:
 - git --with-blk-sha1 --with-brewed-curl --with-brewed-openssl --with-brewed-svn --with-gettext --with-pcre --with-persistent-https --without-completions
 - git-annex
 - git-cal
+- git-now
 - mercurial
 - subversion
 # other
