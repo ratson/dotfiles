@@ -1,7 +1,7 @@
 after-scripts:
 - brew analytics off
 - brew linkapps --local
-- peru --sync-dir=$HOME/ --file=./peru.yaml reup
+- peru --sync-dir=$HOME/ --file=./peru.yaml --cache-dir=$HOME/.cache/peru reup
 - pip3 install -U -r requirements.txt
 - apm upgrade --no-confirm
 - vagrant plugin update
@@ -97,6 +97,7 @@ formulas:
 - trash
 - vegeta
 - w3m
+- wget
 - youtube-dl
 - zsh --disable-etcdir
 taps:

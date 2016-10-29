@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# this script replace `node` binary with signed version for OSX
+set -e
+
+if [[ "$OSTYPE" != darwin* ]]; then
+  exit 1
+fi
+
+NODE_BIN=$(which node) || exit 1
+codesign -dv $NODE_BIN && exit 0
+
+DOWNLOAD_DIR=$(mktemp -d -t "node-pkg")
+NODE_VERSION=$(node --version)
+
+function cleanup {
+  rm -rf "$DOWNLOAD_DIR"
+}
+trap cleanup EXIT
+
+cd "$DOWNLOAD_DIR"
+wget "https://nodejs.org/dist/$NODE_VERSION/node-$NODE_VERSION.pkg"
+xar -xf "node-$NODE_VERSION.pkg"
+tar xf "local.pkg/Payload"
+ditto bin/node "$NODE_BIN"

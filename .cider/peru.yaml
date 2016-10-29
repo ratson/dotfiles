@@ -50,12 +50,12 @@ git module git-shift:
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: f3cddf8271a682e0e5b2e275ab22c0445d5651cb
+  rev: a458ccbb873c59048ee122c89f27e07af0bd5225
 
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
-  rev: aa3a799c39afab721ab47a1d24294d6a753c9e54
+  rev: 721426f75c962adb29b1d7c60d635a828bbd2dd6
 
 git module spacemacs-private:
   url: https://github.com/ratson/spacemacs-private.git

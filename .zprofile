@@ -97,8 +97,11 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 export CHECKPOINT_DISABLE=1
 export HOMEBREW_NO_ANALYTICS=1
-export PACKER_CACHE_DIR=$HOME/.cache/packer
 export yeoman_test=1
+
+export PACKER_CACHE_DIR=$HOME/.cache/packer
+export PERU_CACHE_DIR=$HOME/.cache/peru
+export ZPLUG_CACHE_FILE=$HOME/.cache/zplug
 
 # Make Zsh the default shell
 [[ $SHELL =~ "zsh" ]] || export SHELL=`builtin which zsh`
