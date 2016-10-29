@@ -70,7 +70,6 @@ formulas:
 # other
 - aspell --with-lang-en
 - brew-cask
-- cheat
 - cloc
 - coreutils
 - dnsmasq --with-dnssec --with-libidn
