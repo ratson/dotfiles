@@ -43,12 +43,30 @@ casks:
 - vlc
 - xquartz
 formulas:
+# compression
+- p7zip
+- xz
+- zopfli
 # editor
 - emacs --with-cocoa --with-gnutls --with-imagemagick --verbose
 - vim
+# node
+- node
+- nvm
+# python
+- pypy
+- python
+- python3
 # tmux
 - tmux
 - reattach-to-user-namespace
+# vcs
+# git provided completion hides better zsh one, so install without it
+- git --with-blk-sha1 --with-brewed-curl --with-brewed-openssl --with-brewed-svn --with-gettext --with-pcre --with-persistent-https --without-completions
+- git-annex
+- git-cal
+- mercurial
+- subversion
 # other
 - aspell --with-lang-en
 - brew-cask
@@ -61,28 +79,17 @@ formulas:
 - ffind
 - findutils
 - fortune
-# git provided completion hides better zsh one, so install without it
-- git --with-blk-sha1 --with-brewed-curl --with-brewed-openssl --with-brewed-svn --with-gettext --with-pcre --with-persistent-https --without-completions
-- git-annex
-- git-cal
 - go
+- jq
 - jsonpp
-- mercurial
 - multitail
 - nmap
-- node
-- nvm
-- p7zip
 - pandoc
 - pass
 - peco
-- pypy
-- python
-- python3
 - ranger
 - ruby
 - shellcheck
-- subversion
 - task --with-gnutls
 - terminal-notifier
 - the_silver_searcher
@@ -90,9 +97,7 @@ formulas:
 - trash
 - vegeta
 - w3m
-- xz
 - youtube-dl
-- zopfli
 - zsh --disable-etcdir
 taps:
 - caskroom/cask
