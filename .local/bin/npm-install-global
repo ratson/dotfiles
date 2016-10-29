@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -e
+
+PACKAGE_JSON=$(cat "${1:-package.json}")
+
+echo $PACKAGE_JSON | jq -r '.private' | grep 'true' > /dev/null || { echo 'Error: "private" must be "true"' 1>&2 ; exit 1; }
+echo $PACKAGE_JSON | jq -r '.preferGlobal' | grep 'true' > /dev/null || { echo 'Error: "preferGlobal" must be "true"' 1>&2 ; exit 1; }
+
+packages=($(echo $PACKAGE_JSON | jq -r '.dependencies | keys[]'))
+versions=($(echo $PACKAGE_JSON | jq -r '.dependencies[]'))
+installed=$(npm list -g --depth=0)
+
+for ((i=0;i<${#packages[@]};++i)); do
+  pkg="${packages[i]}@${versions[i]}"
+  echo $installed | grep "${packages[i]}@" > /dev/null || { printf "Installing %s\n" "$pkg"; npm install -g "$pkg"; }
+done
