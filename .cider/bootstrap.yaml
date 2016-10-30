@@ -110,3 +110,7 @@ taps:
 - homebrew/versions
 - homebrew/x11
 - neovim/neovim
+symlinks:
+  etc/dnsmasq.conf: /usr/local/etc/dnsmasq.conf
+  etc/mongod.conf: /usr/local/etc/mongod.conf
+  launch-agents/emacs.plist: ~/Library/LaunchAgents/emacs.plist
