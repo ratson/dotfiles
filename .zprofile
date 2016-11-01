@@ -103,5 +103,7 @@ export PACKER_CACHE_DIR=$HOME/.cache/packer
 export PERU_CACHE_DIR=$HOME/.cache/peru
 export ZPLUG_CACHE_FILE=$HOME/.cache/zplug
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 # Make Zsh the default shell
 [[ $SHELL =~ "zsh" ]] || export SHELL=`builtin which zsh`
