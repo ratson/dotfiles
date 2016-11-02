@@ -55,7 +55,7 @@ git module nvm:
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
-  rev: 721426f75c962adb29b1d7c60d635a828bbd2dd6
+  rev: db20ba528bbe16e045f5893b8660fd9315b494bf
 
 git module spacemacs-private:
   url: https://github.com/ratson/spacemacs-private.git
