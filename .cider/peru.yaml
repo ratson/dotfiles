@@ -7,7 +7,6 @@ imports:
   git-shift: .local/bin/
   nvm: .nvm/
   spacemacs: .emacs.d/
-  spacemacs-private: .emacs.d/private/
   sublime-omni-markup-previewer: Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer
   tmux-sensible: .local/opt/tmux-sensible/
   vim-pathogen: .vim/
@@ -56,11 +55,6 @@ git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
   rev: db20ba528bbe16e045f5893b8660fd9315b494bf
-
-git module spacemacs-private:
-  url: https://github.com/ratson/spacemacs-private.git
-  reup: master
-  rev: bd46f33960f3ad614d5e9f2e2db437d1829bf543
 
 git module sublime-omni-markup-previewer:
   url: https://github.com/timonwong/OmniMarkupPreviewer.git
