@@ -49,12 +49,12 @@ git module git-shift:
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: a458ccbb873c59048ee122c89f27e07af0bd5225
+  rev: 942e9ab1f5da1bb94622412e1a45587674b4f273
 
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
-  rev: db20ba528bbe16e045f5893b8660fd9315b494bf
+  rev: 29049dd3ac6d846f2e722b53b58d93bad533f04c
 
 git module sublime-omni-markup-previewer:
   url: https://github.com/timonwong/OmniMarkupPreviewer.git
