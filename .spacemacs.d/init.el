@@ -40,7 +40,6 @@ values."
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-sort-by-usage t)
-     adas
      better-defaults
      colors
      command-log

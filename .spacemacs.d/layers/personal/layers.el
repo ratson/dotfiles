@@ -1,4 +1,1 @@
-(configuration-layer/declare-layers
- '(
-   atom
-   ))
+(configuration-layer/declare-layers '(atom))
