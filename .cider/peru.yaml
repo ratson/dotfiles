@@ -7,6 +7,7 @@ imports:
   git-shift: .local/bin/
   nvm: .nvm/
   spacemacs: .emacs.d/
+  srihash: .local/bin/
   sublime-omni-markup-previewer: Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer
   tmux-sensible: .local/opt/tmux-sensible/
   vim-pathogen: .vim/
@@ -49,12 +50,17 @@ git module git-shift:
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: 942e9ab1f5da1bb94622412e1a45587674b4f273
+  rev: 24f8ae5c46d084acf88c2717e8a7cacfca52e9b4
 
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
   rev: 29049dd3ac6d846f2e722b53b58d93bad533f04c
+
+git module srihash:
+  url: https://github.com/f0rk/srihash.git
+  pick: srihash
+  rev: a79b9a9c01a0817075080efd60799cd92b90d589
 
 git module sublime-omni-markup-previewer:
   url: https://github.com/timonwong/OmniMarkupPreviewer.git
