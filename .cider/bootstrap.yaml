@@ -40,6 +40,7 @@ casks:
 - vagrant
 - virtualbox
 - vlc
+- wkhtmltopdf
 - xquartz
 formulas:
 # compression

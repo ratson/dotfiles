@@ -67,6 +67,7 @@
 	# typo
 	grp = grep
 	greo = grep
+	remotes = remote
 [color]
 	ui = true
 [color "diff"]
