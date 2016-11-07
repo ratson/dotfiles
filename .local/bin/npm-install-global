@@ -8,9 +8,10 @@ echo $PACKAGE_JSON | jq -r '.preferGlobal' | grep 'true' > /dev/null || { echo '
 
 packages=($(echo $PACKAGE_JSON | jq -r '.dependencies | keys[]'))
 versions=($(echo $PACKAGE_JSON | jq -r '.dependencies[]'))
-installed=$(npm list -g --depth=0)
+installed=$(npm list -g --depth=0 --json)
 
 for ((i=0;i<${#packages[@]};++i)); do
   pkg="${packages[i]}@${versions[i]}"
-  echo $installed | grep "${packages[i]}@" > /dev/null || { printf "Installing %s\n" "$pkg"; npm install -g "$pkg"; }
+  echo "Checking $pkg"
+  echo $installed | jq -e ".dependencies[\"${packages[i]}\"].version == \"${versions[i]}\"" > /dev/null || { echo "Installing $pkg"; npm install -g "$pkg"; }
 done
