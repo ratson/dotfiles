@@ -50,12 +50,12 @@ git module git-shift:
 
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: 24f8ae5c46d084acf88c2717e8a7cacfca52e9b4
+  rev: 9c92b5a4ea1b4412204cdfc4e28b02e9b646d60e
 
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git
   reup: develop
-  rev: 29049dd3ac6d846f2e722b53b58d93bad533f04c
+  rev: 2c4cd4dd42cf478eeeb8c08d622316f5a91c86bb
 
 git module srihash:
   url: https://github.com/f0rk/srihash.git
@@ -82,4 +82,4 @@ git module vim-sensible:
 
 git module zplug:
   url: https://github.com/zplug/zplug.git
-  rev: 754a74f433502dcd5027a9530c8702c25fba2b00
+  rev: e20ecbdd2f1ecb0e56219d415679fc80ea84b89c

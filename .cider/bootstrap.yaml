@@ -98,6 +98,7 @@ formulas:
 - vegeta
 - w3m
 - wget
+- yadm
 - youtube-dl
 - zsh --disable-etcdir
 taps:
