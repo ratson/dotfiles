@@ -23,6 +23,8 @@
 	dc = diff --cached
 	ds = diff --staged
 	dw = diff --color-words
+	# gc
+	gc-everything = -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc --aggressive --prune=now
 	# grep
 	todo = grep --break --heading -e ' FIXME *' -e ' TODO *' -e ' XXX *'
 	# ls-files
