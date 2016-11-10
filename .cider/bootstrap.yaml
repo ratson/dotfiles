@@ -39,6 +39,7 @@ casks:
 - the-unarchiver
 - vagrant
 - virtualbox
+- virtualbox-extension-pack
 - vlc
 - wkhtmltopdf
 - xquartz
@@ -92,6 +93,7 @@ formulas:
 - shellcheck
 - task --with-gnutls
 - terminal-notifier
+- testssl
 - the_silver_searcher
 - tree
 - trash
