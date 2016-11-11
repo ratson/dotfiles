@@ -8,6 +8,7 @@ alias ssh-unsafe='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/nul
 alias cleanup-osx-junks="find . -type f -name '.DS_Store' -ls -delete"
 
 # shorthand
+alias mkd=mkdcd
 alias t=task
 alias va=vagrant
 alias wko=workon
