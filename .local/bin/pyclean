@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+find . -type f -name "*.py[co]" -ls -delete
+find . -type d -name "__pycache__" -ls -delete
