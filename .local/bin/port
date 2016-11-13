@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+PORT=$1
+sudo lsof -P -iTCP:$PORT -sTCP:LISTEN
