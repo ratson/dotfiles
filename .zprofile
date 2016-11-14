@@ -102,6 +102,7 @@ export yeoman_test=1
 export PACKER_CACHE_DIR=$HOME/.cache/packer
 export PERU_CACHE_DIR=$HOME/.cache/peru
 export ZPLUG_CACHE_FILE=$HOME/.cache/zplug
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
