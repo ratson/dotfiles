@@ -39,6 +39,10 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 zstyle ':prezto:module:prompt' theme 'squeak'
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
+# plugins
+zplug "tarrasch/zsh-bd"
+zplug "oknowton/zsh-dwim"
+
 zplug "~/.zsh", from:local
 
 if ! zplug check --verbose; then
