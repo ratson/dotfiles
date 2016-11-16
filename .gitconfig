@@ -61,10 +61,11 @@
 	unassume = update-index --no-assume-unchanged
 	# snippets
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+	delete-all-tags = "!git tag | xargs git tag -d"
 	exclude = !sh -c 'echo "$1" >> .git/info/exclude' -
 	count-lines = "!git ls-files -z | xargs -0 wc -l"
 	rebm = !sh -c 'git checkout "$1" && git rebase master' -
-	trash = "!git add . && git commit -m 'trash' && git reset --hard HEAD^"
+	trash = "!git add -A && git commit -m 'trash' && git reset --hard HEAD^"
 	unassume-all = "!git assumed | xargs git unassume"
 	# typo
 	grp = grep
