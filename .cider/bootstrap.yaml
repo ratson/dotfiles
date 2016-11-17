@@ -1,7 +1,7 @@
 after-scripts:
 - brew analytics off
 - brew linkapps --local
-- peru --sync-dir=$HOME/ --file=./peru.yaml --cache-dir=$HOME/.cache/peru reup
+- peru --sync-dir=$HOME/ --file=./peru.yaml --cache-dir=$HOME/.cache/peru sync
 - pip3 install -U -r requirements.txt
 - apm upgrade --no-confirm
 - vagrant plugin update
@@ -89,6 +89,7 @@ formulas:
 - pass
 - peco
 - ranger
+- ripgrep
 - ruby
 - shellcheck
 - task --with-gnutls
