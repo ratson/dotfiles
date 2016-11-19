@@ -5,6 +5,7 @@ imports:
   git-remote-hg: .local/bin/
   git-rewrite-author: .local/bin/
   git-shift: .local/bin/
+  git-whoami: .local/bin/
   nvm: .nvm/
   spacemacs: .emacs.d/
   srihash: .local/bin/
@@ -48,9 +49,14 @@ git module git-shift:
   pick: git-shift
   rev: 4cc16ab0e8ebb232cc28db4dc40f6dec51569983
 
+git module git-whoami:
+  url: https://github.com/petere/git-whoami.git
+  pick: git-whoami
+  rev: 5d77e00f3f8cc0b8609089bb071da880b5dbe0c1
+
 git module nvm:
   url: https://github.com/creationix/nvm.git
-  rev: 03608291a67757d743bcde26a43bc677567b0862
+  rev: ab6be9c0c1629fffa3ac3a96fefa20c5118429fb
 
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs.git

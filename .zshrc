@@ -5,8 +5,6 @@
 export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh
 
-zplug "Schnouki/git-annex-zsh-completion", at:e87e7db, frozen:1
-
 # zsh-users
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
@@ -40,8 +38,9 @@ zstyle ':prezto:module:prompt' theme 'squeak'
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # plugins
-zplug "tarrasch/zsh-bd"
-zplug "oknowton/zsh-dwim"
+zplug "oknowton/zsh-dwim", at:b4331cc, frozen:1
+zplug "Schnouki/git-annex-zsh-completion", at:e87e7db, frozen:1
+zplug "tarrasch/zsh-bd", at:3724233, frozen:1
 
 zplug "~/.zsh", from:local
 
