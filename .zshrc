@@ -11,6 +11,11 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
 zplug "zsh-users/zsh-history-substring-search", nice:12
 
+# plugins
+zplug "lukechilds/zsh-better-npm-completion", at:c20b07c, frozen:1, nice:8
+zplug "Schnouki/git-annex-zsh-completion", at:e87e7db, frozen:1
+zplug "tarrasch/zsh-bd", at:3724233, frozen:1
+
 # prezto
 zplug 'modules/environment', from:prezto
 zplug 'modules/terminal', from:prezto, frozen:1
@@ -36,11 +41,6 @@ zstyle ':prezto:*:*' color 'yes'
 zstyle ':prezto:module:editor' key-bindings 'emacs'
 zstyle ':prezto:module:prompt' theme 'squeak'
 zstyle ':prezto:module:terminal' auto-title 'yes'
-
-# plugins
-zplug "oknowton/zsh-dwim", at:b4331cc, frozen:1
-zplug "Schnouki/git-annex-zsh-completion", at:e87e7db, frozen:1
-zplug "tarrasch/zsh-bd", at:3724233, frozen:1
 
 zplug "~/.zsh", from:local
 
