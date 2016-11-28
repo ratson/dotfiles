@@ -14,6 +14,7 @@ zplug "zsh-users/zsh-history-substring-search", nice:12
 # plugins
 zplug "lukechilds/zsh-better-npm-completion", at:c20b07c, frozen:1, nice:8
 zplug "Schnouki/git-annex-zsh-completion", at:e87e7db, frozen:1
+zplug "supercrabtree/k", at:1fa7c03, frozen:1
 zplug "tarrasch/zsh-bd", at:3724233, frozen:1
 
 # prezto
