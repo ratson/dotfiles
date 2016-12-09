@@ -8,12 +8,12 @@ source $ZPLUG_HOME/init.zsh
 # zsh-users
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting", nice:10
-zplug "zsh-users/zsh-history-substring-search", nice:12
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-history-substring-search", defer:3
 
 # plugins
-zplug "lukechilds/zsh-better-npm-completion", at:c20b07c, frozen:1, nice:8
 zplug "Schnouki/git-annex-zsh-completion", at:e87e7db, frozen:1
+zplug "lukechilds/zsh-better-npm-completion", at:c20b07c, frozen:1, defer:2
 zplug "supercrabtree/k", at:1fa7c03, frozen:1
 zplug "tarrasch/zsh-bd", at:3724233, frozen:1
 
@@ -28,14 +28,14 @@ zplug 'modules/utility', from:prezto, frozen:1
 zplug "modules/completion", from:prezto, frozen:1
 zplug "modules/fasd", from:prezto, frozen:1
 zplug "modules/git", from:prezto, frozen:1
-zplug "modules/gpg", from:prezto, frozen:1
+#zplug "modules/gpg", from:prezto, frozen:1
 zplug "modules/node", from:prezto, frozen:1
 zplug 'modules/osx', from:prezto, frozen:1
-zplug 'modules/pacman', from:prezto, frozen:1
+#zplug 'modules/pacman', from:prezto, frozen:1
 zplug "modules/python", from:prezto, frozen:1
 zplug "modules/rsync", from:prezto, frozen:1
 zplug "modules/ruby", from:prezto, frozen:1
-zplug "modules/ssh", from:prezto, frozen:1
+#zplug "modules/ssh", from:prezto, frozen:1
 zplug "modules/tmux", from:prezto, frozen:1
 zplug "modules/prompt", from:prezto, frozen:1
 zstyle ':prezto:*:*' color 'yes'
