@@ -54,6 +54,7 @@ formulas:
 # node
 - node
 - nvm
+- yarn
 # python
 - pypy
 - python
