@@ -12,6 +12,7 @@ com.apple.dashboard:
 com.apple.desktopservices:
   # Avoid creating .DS_Store files on network volumes
   DSDontWriteNetworkStores: 1
+  DSDontWriteUSBStores: true
 com.apple.dock:
   autohide: 1
   persistent-apps: []
@@ -40,6 +41,8 @@ com.apple.screensaver:
   # 12: Notification Center
   wvous-bl-corner: 5
   wvous-bl-modifier: 0
+com.apple.universalaccess:
+  reduceTransparency: true
 com.apple.AppleMultitouchTrackpad:
   # Tap to click
   Clicking: 1
