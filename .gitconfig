@@ -40,6 +40,7 @@
 	# pull
 	p = pull --rebase --stat
 	# rebase
+	rb = rebase
 	rebasex = rebase --committer-date-is-author-date --ignore-date
 	rebase-author = rebase --ignore-date --interactive --exec \"git commit --amend --reset-author --no-edit\"
 	# remote
@@ -61,9 +62,11 @@
 	unassume = update-index --no-assume-unchanged
 	# snippets
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+	cloc = "!cloc --vcs git"
+	count-lines = "!git ls-files -z | xargs -0 wc -l"
 	delete-all-tags = "!git tag | xargs git tag -d"
 	exclude = !sh -c 'echo "$1" >> .git/info/exclude' -
-	count-lines = "!git ls-files -z | xargs -0 wc -l"
+	mt = !sh -c 'CURRENT=$(git symbolic-ref HEAD) && git checkout "$1" && git merge --ff-only "$CURRENT"' -
 	rebm = !sh -c 'git checkout "$1" && git rebase master' -
 	trash = "!git add -A && git commit -m 'trash' && git reset --hard HEAD^"
 	unassume-all = "!git assumed | xargs git unassume"
