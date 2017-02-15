@@ -67,8 +67,9 @@
 	delete-all-tags = "!git tag | xargs git tag -d"
 	exclude = !sh -c 'echo "$1" >> .git/info/exclude' -
 	mt = !sh -c 'CURRENT=$(git symbolic-ref HEAD) && git checkout "$1" && git merge --ff-only "$CURRENT"' -
+	now = "!git add -A && git commit -m \"$(date +'[now] %Y/%m/%d %T')\""
 	rebm = !sh -c 'git checkout "$1" && git rebase master' -
-	trash = "!git add -A && git commit -m 'trash' && git reset --hard HEAD^"
+	trash = "!git add -A && git commit -m '[trash]' && git reset --hard HEAD^"
 	unassume-all = "!git assumed | xargs git unassume"
 	# typo
 	grp = grep
