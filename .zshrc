@@ -35,6 +35,7 @@ zplug 'modules/osx', from:prezto, frozen:1
 zplug "modules/python", from:prezto, frozen:1
 zplug "modules/rsync", from:prezto, frozen:1
 zplug "modules/ruby", from:prezto, frozen:1
+zplug "modules/haskell", from:prezto, frozen:1
 #zplug "modules/ssh", from:prezto, frozen:1
 zplug "modules/tmux", from:prezto, frozen:1
 zplug "modules/prompt", from:prezto, frozen:1
@@ -57,6 +58,10 @@ zplug load --verbose
 # zsh variables
 HISTFILE="$HOME/.local/share/zsh_history"
 SAVEHIST=1000000
+HISTSIZE=100000
+HISTFILESIZE=$HISTSIZE
+# Make some commands not show up in history.
+HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:ll:"
 
 # zsh-history-substring-search
 if zplug check "zsh-users/zsh-history-substring-search"; then
