@@ -1,0 +1,8 @@
+id: local
+minion_id_caching: False
+file_client: local
+file_roots:
+  base:
+    - states
+cachedir: /tmp/salt/cache
+log_file: /tmp/salt/log

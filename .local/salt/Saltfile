@@ -1,0 +1,2 @@
+salt-call:
+  config_dir: config
