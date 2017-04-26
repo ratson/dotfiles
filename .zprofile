@@ -37,13 +37,6 @@ if [[ -z "$LC_ALL" ]]; then
 fi
 
 #
-# golang
-#
-
-export GOPATH=/usr/local/lib/golang
-export GOBIN=$GOPATH/bin
-
-#
 # Paths
 #
 
