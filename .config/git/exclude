@@ -4,6 +4,7 @@
 *.key
 *.log
 *.pid
+erl_crash.dump
 
 ### Android ###
 # Built application files
@@ -31,9 +32,8 @@ build/
 
 ### Node ####
 node_modules/
-npm-debug.log
+package-lock.json
 yarn.lock
-lerna-debug.log
 
 
 ### OSX ###

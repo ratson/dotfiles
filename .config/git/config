@@ -83,10 +83,11 @@
 	old = red
 	whitespace = red reverse
 [commit]
-	template = ~/.gitmessage
+	template = ~/.config/git/commit-message.txt
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.config/git/exclude
 	whitespace = -indent-with-non-tab,trailing-space,cr-at-eol,tab-in-indent
+	askPass = 
 [format]
 	pretty = fuller
 [grep]
@@ -101,3 +102,5 @@
 	enabled = true
 [tig]
 	mouse = yes
+[credential]
+	helper = 
