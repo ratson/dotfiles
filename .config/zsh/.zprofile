@@ -49,14 +49,17 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 fpath=(
-  $HOME/.zsh/functions
+  $ZDOTDIR/custom/functions
   $fpath
 )
 
 # Set the list of directories that Zsh searches for programs.
+# U for Unique, like a set; (N) == only if exists
 path=(
-  $HOME/.local/bin
-  /usr/local/opt/openssl/bin
+  $HOME/.local/bin(N)
+  $HOME/.cargo/bin(N)
+  /usr/local/opt/openssl/bin(N)
+  /usr/local/opt/python/libexec/bin(N)
   /usr/local/{bin,sbin}
   $path
   $GOBIN
@@ -89,16 +92,20 @@ fi
 TMPPREFIX="${TMPDIR%/}/zsh"
 
 export CHECKPOINT_DISABLE=1
+export FASTLANE_OPT_OUT_USAGE=1
 export HOMEBREW_NO_ANALYTICS=1
 export NO_UPDATE_NOTIFIER=1
 export yeoman_test=1
 
+export NVM_DIR="$HOME/.nvm"
 export PACKER_CACHE_DIR=$HOME/.cache/packer
 export PERU_CACHE_DIR=$HOME/.cache/peru
-export ZPLUG_CACHE_DIR=$HOME/.cache/zplug
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_NDK=$HOME/Library/Android/android-ndk-r10e
 
 # Make Zsh the default shell
 [[ $SHELL =~ "zsh" ]] || export SHELL=`builtin which zsh`
+
+export PATH="$HOME/.cargo/bin:$PATH"
