@@ -1,11 +1,14 @@
-alias.bd=burndown.weekly
-alias.bdd=burndown.daily
-alias.bdm=burndown.monthly
+alias.b=status != 'waiting' burndown.daily
+alias.bd=burndown.daily
+alias.bw=burndown.weekly
+alias.bm=burndown.monthly
 alias.c=calendar
 alias.d=today
 alias.g=ghistory
 alias.h=history
 alias.w=timesheet
+
+default.command =next limit:3
 
 reserved.lines=2
 search.case.sensitive=no
