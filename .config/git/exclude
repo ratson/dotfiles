@@ -30,6 +30,12 @@ build/
 \#*\#
 
 
+# Linux
+.*
+*~
+*.sw[a-p]
+
+
 ### Node ####
 node_modules/
 package-lock.json
