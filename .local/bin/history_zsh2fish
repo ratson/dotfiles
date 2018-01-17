@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+import os
+import re
+from pathlib import Path
+
+
+def is_zsh_command(cmd):
+    return cmd and re.match('^:\s+\d+:\d;', cmd)
+
+
+def is_fish_command(cmd):
+    for reg in r'^\S+=', r'\$\(', r'\[ ', r'`', r'\\$':
+        if re.match(reg, cmd):
+            return False
+    return True
+
+
+def zsh_to_fish(cmd):
+    if not is_zsh_command(cmd):
+        return None
+
+    meta, command = cmd.split(';', 1)
+    command = command.replace('&&', '; and ').replace('||', '; or ')
+    if not is_fish_command(command):
+        return None
+
+    time = meta.split(':')[1].strip()
+    return command, time
+
+
+def main():
+    fish_history_path = Path('~/.local/share/fish/fish_history').expanduser()
+    zsh_history_path = Path(os.getenv('HISTFILE', '~/.zsh_history')).expanduser()
+    assert zsh_history_path.exists()
+
+    print(f'Importing {zsh_history_path}')
+    with fish_history_path.open('a') as o:
+        with zsh_history_path.open(encoding='utf-8', errors='ignore') as f:
+            for line in f:
+                line = line.strip()
+                try:
+                    command, time = zsh_to_fish(line)
+                except TypeError:
+                    print(f'Skip {line}')
+                    continue
+                print('Add', command)
+                o.write(f'- cmd: {command}\n  when: {time}\n')
+
+
+if __name__ == '__main__':
+    main()
