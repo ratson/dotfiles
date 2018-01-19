@@ -88,6 +88,8 @@
 	excludesfile = ~/.config/git/exclude
 	whitespace = -indent-with-non-tab,trailing-space,cr-at-eol,tab-in-indent
 	askPass = 
+[credential]
+	helper =
 [format]
 	pretty = fuller
 [grep]
@@ -100,7 +102,7 @@
 	stat = true
 [rerere]
 	enabled = true
+[user]
+	useConfigOnly = true
 [tig]
 	mouse = yes
-[credential]
-	helper = 
