@@ -27,12 +27,14 @@
 	gc-everything = -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc --aggressive --prune=now
 	# grep
 	todo = grep --break --heading -e ' FIXME *' -e ' TODO *' -e ' XXX *'
-	# ls-files
-	ls-ignored = ls-files --others -i --exclude-standard
 	# log
 	log-graph = log --all --decorate --graph
 	log-refs = log --all --decorate --graph --no-merges --oneline --simplify-by-decoration
 	log-tree = log --abbrev-commit --all --decorate --graph --pretty=oneline
+	# ls-files
+	ls-ignored = ls-files --others -i --exclude-standard
+	# ls-remote
+	url = ls-remote --get-url 
 	# merge
 	m = merge --ff-only
 	mm = merge
