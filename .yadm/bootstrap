@@ -1,0 +1,158 @@
+#!/bin/bash
+
+system_type=$(uname -s)
+
+if [ "$system_type" = "Darwin" ]; then
+
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+
+# Disable smart dashes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable smart quotes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Disable crash reporter
+defaults write com.apple.CrashReporter DialogType none
+
+
+###############################################################################
+# Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
+###############################################################################
+
+# Enable the debug menu in Disk Utility
+defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
+defaults write com.apple.DiskUtility advanced-image-options -bool true
+
+###############################################################################
+# Dock, Dashboard, and hot corners                                            #
+###############################################################################
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Remove all the icons in the Dock
+defaults write com.apple.dock persistent-apps -array ""
+
+# Set the icon size of Dock items
+defaults write com.apple.dock tilesize -int 28
+
+# Run the screensaver if we're in the bottom-left hot corner.
+# Possible values:
+#  0: no-op
+#  2: Mission Control
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
+defaults write com.apple.dock wvous-bl-corner -int 5
+defaults write com.apple.dock wvous-bl-modifier -int 0
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+
+# Show all filename extensions in Finder
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Avoids creation of .DS_Store and AppleDouble files
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# When performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Allow text selection in Quick Look
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# Show path bar in Finder
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Show status bar in Finder
+defaults write com.apple.finder ShowStatusBar -bool true
+
+###############################################################################
+# Mac App Store                                                               #
+###############################################################################
+
+# Enable the WebKit Developer Tools in the Mac App Store
+defaults write com.apple.appstore WebKitDeveloperExtras -bool true
+
+# Enable Debug Menu in the Mac App Store
+defaults write com.apple.appstore ShowDebugMenu -bool true
+
+###############################################################################
+# Menu bar                                                                    #
+###############################################################################
+
+# Setup the menu bar date format
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  h:mm a"
+
+# Flash the : in the menu bar
+defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
+
+###############################################################################
+# Safari & WebKit                                                             #
+###############################################################################
+
+# Set Safari’s home page to `about:blank` for faster loading
+defaults write com.apple.Safari HomePage -string "about:blank"
+
+# Enable Safari’s debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Enable the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+
+# Privacy: don’t send search queries to Apple
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+
+###############################################################################
+# Security                                                                    #
+###############################################################################
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+###############################################################################
+# Time Machine                                                                #
+###############################################################################
+
+# Prevent Time Machine from prompting to use new hard drives as backup volume
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+###############################################################################
+# Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
+###############################################################################
+
+# Tap to click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+
+###############################################################################
+# Various apps                                                                #
+###############################################################################
+
+# Disable Chrome auto-update
+defaults write com.google.Keystone.Agent checkInterval 0
+
+# iTerm
+defaults write com.googlecode.iterm2 DimInactiveSplitPanes -bool true
+defaults write com.googlecode.iterm2 FocusFollowsMouse -bool false
+defaults write com.googlecode.iterm2 PromptOnQuit -bool true
+defaults write com.googlecode.iterm2 UseLionStyleFullscreen -bool false
+defaults write com.googlecode.iterm2 WindowNumber -bool true
+
+fi
