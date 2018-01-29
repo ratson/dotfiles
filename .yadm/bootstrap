@@ -155,4 +155,7 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool true
 defaults write com.googlecode.iterm2 UseLionStyleFullscreen -bool false
 defaults write com.googlecode.iterm2 WindowNumber -bool true
 
+export PERU_CACHE_DIR=$HOME/Library/Caches/peru
+peru --file=./peru.yaml --sync-dir=$HOME/ --state-dir=$HOME/Library/Caches/peru-home sync
+
 fi

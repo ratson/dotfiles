@@ -1,0 +1,11 @@
+imports:
+  fish-fasd: .config/fish/
+
+git module fish-fasd:
+  url: https://github.com/fishgretel/fasd
+  pick:
+    - completions/fasd.fish
+    - completions/fasd_cd.fish
+    - functions/__fasd_print_completion.fish
+    - functions/fasd_cd.fish
+  rev: a0a3c3503961b8cd36e6bec8a7ae0edbca19d105
