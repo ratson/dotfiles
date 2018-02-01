@@ -1,5 +1,6 @@
 imports:
   fish-fasd: .config/fish/
+  git-shift: .local/bin/
 
 git module fish-fasd:
   url: https://github.com/fishgretel/fasd
@@ -9,3 +10,8 @@ git module fish-fasd:
     - functions/__fasd_print_completion.fish
     - functions/fasd_cd.fish
   rev: a0a3c3503961b8cd36e6bec8a7ae0edbca19d105
+
+git module git-shift:
+  url: https://github.com/gitbits/git-shift
+  pick: git-shift
+  rev: 4cc16ab0e8ebb232cc28db4dc40f6dec51569983
