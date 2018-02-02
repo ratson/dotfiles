@@ -1,6 +1,7 @@
 imports:
   fish-fasd: .config/fish/
   git-shift: .local/bin/
+  git-rewrite-author: .local/bin/
 
 git module fish-fasd:
   url: https://github.com/fishgretel/fasd
@@ -15,3 +16,8 @@ git module git-shift:
   url: https://github.com/gitbits/git-shift
   pick: git-shift
   rev: 4cc16ab0e8ebb232cc28db4dc40f6dec51569983
+
+git module git-rewrite-author:
+  url: https://github.com/davidfokkema/git-rewrite-author
+  pick: git-rewrite-author
+  rev: c4dbb54ddc6bf7aaf423c1665215a875de334fc9
