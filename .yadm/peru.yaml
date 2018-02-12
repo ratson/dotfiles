@@ -2,6 +2,7 @@ imports:
   fish-fasd: .config/fish/
   git-shift: .local/bin/
   git-rewrite-author: .local/bin/
+  git-whoami: .local/bin/
 
 git module fish-fasd:
   url: https://github.com/fishgretel/fasd
@@ -21,3 +22,8 @@ git module git-rewrite-author:
   url: https://github.com/davidfokkema/git-rewrite-author
   pick: git-rewrite-author
   rev: c4dbb54ddc6bf7aaf423c1665215a875de334fc9
+
+git module git-whoami:
+  url: https://github.com/petere/git-whoami
+  pick: git-whoami
+  rev: 5d77e00f3f8cc0b8609089bb071da880b5dbe0c1
