@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ifconfig | grep '192' | awk '{print $2}'
