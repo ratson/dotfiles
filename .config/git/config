@@ -71,6 +71,7 @@
 	mt = !sh -c 'CURRENT=$(git symbolic-ref HEAD) && git checkout "$1" && git merge --ff-only "$CURRENT"' -
 	now = "!git add -A && git commit --no-verify -m \"$(date +'[now] %Y/%m/%d %T')\""
 	rebm = !sh -c 'git checkout "$1" && git rebase master' -
+	shallow-this = "!git fetch --depth=1 && git gc --prune=all"
 	trash = "!git add -A && git commit -m '[trash]' && git reset --hard HEAD^"
 	unassume-all = "!git assumed | xargs git unassume"
 	# typo
