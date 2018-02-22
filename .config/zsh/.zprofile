@@ -98,9 +98,9 @@ export HOMEBREW_NO_ANALYTICS=1
 export NO_UPDATE_NOTIFIER=1
 export yeoman_test=1
 
-export NVM_DIR="$HOME/Libray/Caches/nvm"
-export GRADLE_USER_HOME=$HOME/Libray/Caches/gradle
-export PACKER_CACHE_DIR=$HOME/Libray/Caches/packer
+export NVM_DIR="$HOME/Library/Caches/nvm"
+export GRADLE_USER_HOME=$HOME/Library/Caches/gradle
+export PACKER_CACHE_DIR=$HOME/Library/Caches/packer
 export PERU_CACHE_DIR=$HOME/Library/Caches/peru
 export PUB_CACHE=$HOME/Library/Caches/pub
 export WORKON_HOME=$HOME/Library/Caches/virtualenvs
