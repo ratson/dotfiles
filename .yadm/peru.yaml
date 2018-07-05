@@ -3,6 +3,7 @@ imports:
   git-shift: .local/bin/
   git-rewrite-author: .local/bin/
   git-whoami: .local/bin/
+  spacemacs: .emacs.d/
 
 git module fish-fasd:
   url: https://github.com/fishgretel/fasd
@@ -16,7 +17,7 @@ git module fish-fasd:
 git module git-shift:
   url: https://github.com/gitbits/git-shift
   pick: git-shift
-  rev: 4cc16ab0e8ebb232cc28db4dc40f6dec51569983
+  rev: 2104f6e8c429217066506cb2add62563dc4554a9
 
 git module git-rewrite-author:
   url: https://github.com/davidfokkema/git-rewrite-author
@@ -27,3 +28,8 @@ git module git-whoami:
   url: https://github.com/petere/git-whoami
   pick: git-whoami
   rev: 5d77e00f3f8cc0b8609089bb071da880b5dbe0c1
+
+git module spacemacs:
+  url: https://github.com/syl20bnr/spacemacs
+  reup: develop
+  rev: 7c9f612c4f4a1eda7c8a11194ff2bce21ca53ca0

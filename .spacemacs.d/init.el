@@ -59,7 +59,10 @@ values."
      javascript
      markdown
      helm
-     org
+     (org :variables
+       org-enable-org-journal-support t
+       org-journal-date-format "%A, %B %d %Y"
+       org-journal-file-format "%Y-%m-%d")
      osx
      python
      react
