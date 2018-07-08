@@ -97,7 +97,7 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 ###############################################################################
 
 # Setup the menu bar date format
-defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  h:mm a"
+defaults write com.apple.menuextra.clock DateFormat -string "H:mm"
 
 # Flash the : in the menu bar
 defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
