@@ -50,6 +50,7 @@ values."
      emacs-lisp
      emoji
      fasd
+     finance
      games
      git
      gnus
@@ -60,9 +61,9 @@ values."
      markdown
      helm
      (org :variables
-       org-enable-org-journal-support t
-       org-journal-date-format "%A, %B %d %Y"
-       org-journal-file-format "%Y-%m-%d")
+          org-enable-org-journal-support t
+          org-journal-date-format "%A, %B %d %Y"
+          org-journal-file-format "%Y-%m-%d")
      osx
      python
      react
@@ -78,6 +79,8 @@ values."
      sql
      syntax-checking
      tmux
+     (treemacs :variables
+               treemacs-use-follow-mode t)
      vagrant
      version-control
      vimscript
@@ -317,6 +320,7 @@ values."
    ;; `current', `all' or `nil'. Default is `all' (highlight any scope and
    ;; emphasis the current one). (default 'all)
    dotspacemacs-highlight-delimiters 'all
+   dotspacemacs-enable-server t
    ;; If non nil, advise quit functions to keep server open when quitting.
    ;; (default nil)
    dotspacemacs-persistent-server nil

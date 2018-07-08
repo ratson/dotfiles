@@ -12,6 +12,8 @@
   (use-package ethan-wspace
     :defer t
     :init
+    (setq mode-require-final-newline nil)
+    :config
     (global-ethan-wspace-mode 1)))
 
 (defun personal/init-git-annex ()
