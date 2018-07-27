@@ -64,6 +64,7 @@
 	unassume = update-index --no-assume-unchanged
 	# snippets
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+	cor = !sh -c 'git branch "$1" && git reset --hard HEAD~ && git checkout "$1"' -
 	cloc = "!cloc --vcs git"
 	count-lines = "!git ls-files -z | xargs -0 wc -l"
 	delete-all-tags = "!git tag | xargs git tag -d"
