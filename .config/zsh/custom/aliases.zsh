@@ -1,6 +1,10 @@
 # Emacs
 alias et='emacsclient -t'
 
+# Git
+# Remove `+` and `-` from start of diff lines; just rely upon color.
+alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
+
 # Python
 alias py='python'
 alias py2='python2'
