@@ -108,7 +108,7 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_NDK=$HOME/Library/Android/android-ndk-r10e
-export CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL='https://services.gradle.org/distributions/gradle-4.9-bin.zip'
+export CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL='https://services.gradle.org/distributions/gradle-4.10.1-bin.zip'
 
 # Make Zsh the default shell
 [[ $SHELL =~ "zsh" ]] || export SHELL=`builtin which zsh`
