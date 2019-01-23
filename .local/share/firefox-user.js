@@ -57,9 +57,6 @@ user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket",
 // Don't let sites auto-refresh
 user_pref("accessibility.blockautorefresh", true);
 
-// Never send the Referer header
-user_pref("network.http.sendRefererHeader", 0);
-
 // PREF: Disable Service Workers
 user_pref("dom.serviceWorkers.enabled", false);
 // PREF: Disable web notifications
