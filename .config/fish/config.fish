@@ -1,4 +1,4 @@
-source ~/.config/zsh/custom/aliases.zsh
+source ~/.local/share/common.sh
 
 alias j='fasd_cd -i'
 

@@ -34,8 +34,8 @@ autoload -Uz c
 autoload -Uz g
 autoload -Uz em
 
+source "$HOME/.local/share/common.sh"
 source "$HOME/.config/zsh/custom/init.zsh"
-source "$HOME/.config/zsh/custom/aliases.zsh"
 source "$HOME/.config/zsh/custom/functions/prompt_stun_setup"
 
 # zsh variables
