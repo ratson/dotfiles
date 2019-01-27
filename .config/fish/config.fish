@@ -1,3 +1,5 @@
+set PATH $HOME/.local/bin $PATH
+
 source ~/.local/share/common.sh
 
 alias j='fasd_cd -i'
