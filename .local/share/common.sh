@@ -19,6 +19,7 @@ alias cleanup-osx-junks="find . -type f -name '.DS_Store' -ls -delete"
 
 # shorthand
 alias mkd=mkdcd
+alias o=open
 alias t=task
 alias va=vagrant
 alias wko=workon
