@@ -6,3 +6,6 @@ alias j='fasd_cd -i'
 
 alias l='exa -1'
 alias ll='exa -l -a -h --extended'
+
+export VIRTUALFISH_HOME=$HOME/Library/Caches/virtualenvs
+eval (/usr/local/bin/python3 -m virtualfish compat_aliases)
