@@ -1,5 +1,6 @@
 imports:
   fish-fasd: .config/fish/
+  fish-nvm: .config/fish/
   git-shift: .local/bin/
   git-rewrite-author: .local/bin/
   git-whoami: .local/bin/
@@ -14,6 +15,14 @@ git module fish-fasd:
     - functions/__fasd_print_completion.fish
     - functions/fasd_cd.fish
   rev: a0a3c3503961b8cd36e6bec8a7ae0edbca19d105
+
+git module fish-nvm:
+  url: https://github.com/jorgebucaran/fish-nvm
+  pick:
+    - completions/nvm.fish
+    - conf.d/nvm.fish
+    - functions/nvm.fish
+  rev: 19467ff3af3b9d549a5d6616a0c51353a9c819fc
 
 git module git-shift:
   url: https://github.com/gitbits/git-shift
