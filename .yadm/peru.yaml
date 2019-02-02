@@ -42,4 +42,4 @@ git module git-whoami:
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs
   reup: develop
-  rev: 7c9f612c4f4a1eda7c8a11194ff2bce21ca53ca0
+  rev: a2bda16823ba27c8a1fd35d3f04a87a101443faa
