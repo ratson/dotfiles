@@ -24,7 +24,7 @@ alias t=task
 alias va=vagrant
 alias wko=workon
 alias ya='yarn --prefer-offline'
-alias yas='BROWSER=none yarn start'
+alias yas='env BROWSER=none yarn start'
 alias yau='yarn upgrade-interactive'
 
 # typo
