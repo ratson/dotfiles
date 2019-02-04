@@ -1,3 +1,6 @@
+set __fish_git_prompt_showcolorhints 1
+set __fish_git_prompt_show_informative_status 1
+
 function fish_prompt --description 'fish prompt'
     set -l color_cwd
     set -l color_suffix $fish_color_normal
@@ -35,6 +38,6 @@ function fish_prompt --description 'fish prompt'
             set suffix '$'
     end
 
-    echo -s (set_color $color_cwd) (prompt_pwd) (set_color $fish_color_error) " $duration_text" (set_color normal)
+    echo -s (set_color $color_cwd) (prompt_pwd) (__fish_git_prompt) (set_color $fish_color_error) " $duration_text" (set_color normal)
     echo -n -s (set_color $color_suffix) "$suffix " (set_color normal)
 end
