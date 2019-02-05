@@ -1,4 +1,4 @@
-set PATH $HOME/.local/bin $PATH
+set PATH $HOME/.nodenv/bin $HOME/.local/bin $PATH
 
 source ~/.local/share/common.sh
 
@@ -9,3 +9,6 @@ alias ll='exa -l -a -h --extended'
 
 export VIRTUALFISH_HOME=$HOME/Library/Caches/virtualenvs
 eval (/usr/local/bin/python3 -m virtualfish compat_aliases)
+
+status --is-interactive; and source (nodenv init - | psub)
+alias nv='nodenv'
