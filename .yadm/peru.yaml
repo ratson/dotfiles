@@ -5,6 +5,8 @@ imports:
   git-rewrite-author: .local/bin/
   git-whoami: .local/bin/
   spacemacs: .emacs.d/
+  spacefish|fish-plugin: .config/fish/
+  spacefish|fish-plugin-root: .config/fish/functions/
 
 git module fish-fasd:
   url: https://github.com/fishgretel/fasd
@@ -23,6 +25,10 @@ git module fish-nvm:
     - conf.d/nvm.fish
     - functions/nvm.fish
   rev: 19467ff3af3b9d549a5d6616a0c51353a9c819fc
+
+git module spacefish:
+  url: https://github.com/matchai/spacefish
+  rev: c40cc06d9a4b5ed3198ff36cda3f64d1c2129f00
 
 git module git-shift:
   url: https://github.com/gitbits/git-shift
@@ -43,3 +49,11 @@ git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs
   reup: develop
   rev: a2bda16823ba27c8a1fd35d3f04a87a101443faa
+
+rule fish-plugin:
+  pick:
+    - functions/*.fish
+
+rule fish-plugin-root:
+  pick:
+    - '*.fish'

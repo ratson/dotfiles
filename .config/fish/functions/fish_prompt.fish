@@ -1,43 +1,33 @@
-set __fish_git_prompt_showcolorhints 1
-set __fish_git_prompt_show_informative_status 1
+function fish_prompt
+	# Store the exit code of the last command
+	set -g sf_exit_code $status
+	set -g SPACEFISH_VERSION 2.2.0
 
-function fish_prompt --description 'fish prompt'
-    set -l color_cwd
-    set -l color_suffix $fish_color_normal
-    set -l last_status "$status"
-    set -l suffix
-    set -l duration_seconds (math (math $CMD_DURATION / 1000) \% 60)
-    set -l duration_minutes (math (math $CMD_DURATION / 60000) \% 60)
-    set -l duration_hours (math $CMD_DURATION / 3600000)
-    set -l duration_text
+	# ------------------------------------------------------------------------------
+	# Configuration
+	# ------------------------------------------------------------------------------
 
-    if [ $last_status != 0 ]
-        set color_suffix $fish_color_error
-    end
+	__sf_util_set_default SPACEFISH_PROMPT_ADD_NEWLINE true
+	__sf_util_set_default SPACEFISH_PROMPT_FIRST_PREFIX_SHOW false
+	__sf_util_set_default SPACEFISH_PROMPT_PREFIXES_SHOW true
+	__sf_util_set_default SPACEFISH_PROMPT_SUFFIXES_SHOW true
+	__sf_util_set_default SPACEFISH_PROMPT_DEFAULT_PREFIX "via "
+	__sf_util_set_default SPACEFISH_PROMPT_DEFAULT_SUFFIX " "
+	__sf_util_set_default SPACEFISH_PROMPT_ORDER time user dir host git package node ruby golang php rust haskell julia docker aws conda pyenv dotnet kubecontext exec_time line_sep battery vi_mode jobs exit_code char
 
-    if [ $CMD_DURATION -ge 3600000 ]
-        set duration_text $duration_hours"h"
-    end
-    if [ $CMD_DURATION -ge 60000 ]
-        set duration_text $duration_text$duration_minutes"m"
-    end
-    if [ $CMD_DURATION -ge 10000 ]
-        set duration_text $duration_text$duration_seconds"s"
-    end
+	# ------------------------------------------------------------------------------
+	# Sections
+	# ------------------------------------------------------------------------------
 
-    switch "$USER"
-        case root toor
-            if set -q fish_color_cwd_root
-                set color_cwd $fish_color_cwd_root
-            else
-                set color_cwd $fish_color_cwd
-            end
-            set suffix '#'
-        case '*'
-            set color_cwd $fish_color_cwd
-            set suffix '$'
-    end
+	# Keep track of whether the prompt has already been opened
+	set -g sf_prompt_opened $SPACEFISH_PROMPT_FIRST_PREFIX_SHOW
 
-    echo -s (set_color $color_cwd) (prompt_pwd) (__fish_git_prompt) (set_color $fish_color_error) " $duration_text" (set_color normal)
-    echo -n -s (set_color $color_suffix) "$suffix " (set_color normal)
+	if test "$SPACEFISH_PROMPT_ADD_NEWLINE" = "true"
+		echo
+	end
+
+	for i in $SPACEFISH_PROMPT_ORDER
+		eval __sf_section_$i
+	end
+	set_color normal
 end
