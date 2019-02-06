@@ -103,7 +103,7 @@ export GRADLE_USER_HOME=$HOME/Library/Caches/gradle
 export PACKER_CACHE_DIR=$HOME/Library/Caches/packer
 export PERU_CACHE_DIR=$HOME/Library/Caches/peru
 export PUB_CACHE=$HOME/Library/Caches/pub
-export WORKON_HOME=$HOME/Library/Caches/virtualenvs
+export WORKON_HOME=$HOME/.local/share/virtualenvs
 export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
