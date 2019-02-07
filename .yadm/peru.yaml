@@ -39,7 +39,7 @@ git module git-whoami:
 git module spacemacs:
   url: https://github.com/syl20bnr/spacemacs
   reup: develop
-  rev: a2bda16823ba27c8a1fd35d3f04a87a101443faa
+  rev: 170bb98cb5f502d5523ca3efc555b4fc694d12fb
 
 rule fish-plugin:
   pick:
