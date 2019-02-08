@@ -1,3 +1,6 @@
+test -z "$LANG" && export LANG='en_US.UTF-8'
+test -z "$LC_ALL" && export LC_ALL=en_US.UTF-8
+
 # Emacs
 alias et='emacsclient -t'
 
